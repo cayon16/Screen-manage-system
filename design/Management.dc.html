@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif; }
+    a { color: #1668A8; } a:hover { color: #0F4E7E; }
+    .card { background: #FFFFFF; border: 2px solid #DCE3E9; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+    .pill { border-radius: 99px; padding: 5px 13px; font-size: 16px; font-weight: 600; border: 1px solid; }
+    .btn { background: #FFFFFF; border: 2px solid #C3CDD6; border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 15px; }
+  </style>
+</helmet>
+
+<div style="width: 1920px; height: 1080px; box-sizing: border-box; background: #F5F7F9; color: #101A22; display: flex; flex-direction: column; overflow: hidden;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 36px; background: #FFFFFF; border-bottom: 2px solid #E4E9ED;">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1668A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3.5 4 7v6c0 4.6 3.3 7.6 8 8.5 4.7-.9 8-3.9 8-8.5V7l-8-3.5Z"></path><path d="M12 9.2v5.6M9.2 12h5.6"></path>
+      </svg>
+      <div style="font-size: 24px; font-weight: 700;">PentaSync — Bảng điều khiển</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 22px;">
+      <div style="display: flex; align-items: center; gap: 8px;"><span style="width: 10px; height: 10px; border-radius: 99px; background: #1668A8;"></span><span style="font-size: 17px; color: #5A6B78;">Máy chủ đang chạy · 4 giờ 12 phút</span></div>
+      <div style="font-size: 17px; color: #8B97A2;">6 màn · màn chính = màn quản lý</div>
+    </div>
+  </div>
+
+  <div style="flex-grow: 1; display: flex; gap: 20px; padding: 22px 36px 26px 36px; overflow: hidden;">
+
+    <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 18px; min-width: 0;">
+
+      <div>
+        <div style="font-size: 15px; font-weight: 700; letter-spacing: 0.12em; color: #8B97A2; text-transform: uppercase; margin-bottom: 11px;">Trạng thái 5 màn hiển thị</div>
+        <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 13px;">
+
+          <div class="card">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 22px; font-weight: 800;">Màn 1</span>
+              <span class="pill" style="border-color: #BBD3E6; background: #EDF3F8; color: #1668A8;">Đang chiếu</span>
+            </div>
+            <div style="height: 90px; border-radius: 9px; background: #F0F3F6; border: 1px solid #E4E9ED; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #5A6B78; text-align: center; padding: 8px;">Giới thiệu bệnh viện</div>
+            <div style="font-size: 15px; color: #8B97A2;">1920×1080 · không cảm ứng</div>
+          </div>
+
+          <div class="card" style="border-color: #1668A8;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 22px; font-weight: 800;">Màn 2</span>
+              <span class="pill" style="border-color: #BBD3E6; background: #EDF3F8; color: #1668A8;">Menu</span>
+            </div>
+            <div style="height: 90px; border-radius: 9px; background: #F0F3F6; border: 1px dashed #C3CDD6; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #5A6B78;">Menu 2 lựa chọn</div>
+            <div style="font-size: 15px; font-weight: 600; color: #1668A8;">1920×1080 · CẢM ỨNG</div>
+          </div>
+
+          <div class="card">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 22px; font-weight: 800;">Màn 3</span>
+              <span class="pill" style="border-color: #BBD3E6; background: #EDF3F8; color: #1668A8;">Đang chiếu</span>
+            </div>
+            <div style="height: 90px; border-radius: 9px; background: #F0F3F6; border: 1px solid #E4E9ED; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #5A6B78; text-align: center; padding: 8px;">Quy trình khám bệnh</div>
+            <div style="font-size: 15px; color: #8B97A2;">1920×1080 · không cảm ứng</div>
+          </div>
+
+          <div class="card" style="border-color: #1668A8;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 22px; font-weight: 800;">Màn 4</span>
+              <span class="pill" style="border-color: #BBD3E6; background: #EDF3F8; color: #1668A8;">Đang chat</span>
+            </div>
+            <div style="height: 90px; border-radius: 9px; background: #F0F3F6; border: 1px dashed #C3CDD6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 15px; color: #5A6B78;">
+              <span>Có người đang trò chuyện</span><span style="color: #8B97A2;">2 phút 08 giây</span>
+            </div>
+            <div style="font-size: 15px; font-weight: 600; color: #1668A8;">1920×1080 · CẢM ỨNG</div>
+          </div>
+
+          <div class="card" style="border-color: #C8534A;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 22px; font-weight: 800;">Màn 5</span>
+              <span class="pill" style="border-color: #E3B4B0; background: #FBEFEE; color: #B24A41;">Mất kết nối</span>
+            </div>
+            <div style="height: 90px; border-radius: 9px; background: #F7F1F0; border: 1px solid #EEDCDA; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #B24A41;">Không có tín hiệu</div>
+            <div style="font-size: 15px; color: #8B97A2;">1920×1080 · không cảm ứng</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="flex-grow: 1; display: flex; flex-direction: column; min-height: 0;">
+        <div style="font-size: 15px; font-weight: 700; letter-spacing: 0.12em; color: #8B97A2; text-transform: uppercase; margin-bottom: 11px;">Đổi nội dung đang chiếu</div>
+        <div style="flex-grow: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px;">
+
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="font-size: 17px; font-weight: 600; color: #5A6B78;">Màn 1</div>
+            <div style="flex-grow: 1; background: #EDF3F8; border: 3px solid #1668A8; border-radius: 13px; padding: 17px; display: flex; align-items: center; font-size: 22px; font-weight: 700;">Giới thiệu bệnh viện</div>
+            <div style="flex-grow: 1; background: #FFFFFF; border: 2px solid #C3CDD6; border-radius: 13px; padding: 17px; display: flex; align-items: center; font-size: 22px; font-weight: 500; color: #2E3E4A;">Giờ làm việc</div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="font-size: 17px; font-weight: 600; color: #5A6B78;">Màn 3</div>
+            <div style="flex-grow: 1; background: #FFFFFF; border: 2px solid #C3CDD6; border-radius: 13px; padding: 17px; display: flex; align-items: center; font-size: 22px; font-weight: 500; color: #2E3E4A;">Nội quy bệnh viện</div>
+            <div style="flex-grow: 1; background: #EDF3F8; border: 3px solid #1668A8; border-radius: 13px; padding: 17px; display: flex; align-items: center; font-size: 22px; font-weight: 700;">Quy trình khám bệnh</div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="font-size: 17px; font-weight: 600; color: #5A6B78;">Màn 5</div>
+            <div style="flex-grow: 1; background: #EDF3F8; border: 3px solid #1668A8; border-radius: 13px; padding: 17px; display: flex; align-items: center; font-size: 22px; font-weight: 700;">Sơ đồ khuôn viên</div>
+            <div style="flex-grow: 1; background: #FFFFFF; border: 2px solid #C3CDD6; border-radius: 13px; padding: 17px; display: flex; align-items: center; font-size: 22px; font-weight: 500; color: #2E3E4A;">Liên hệ &amp; Hỗ trợ</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div style="width: 400px; flex-shrink: 0; display: flex; flex-direction: column; gap: 13px;">
+      <div style="font-size: 15px; font-weight: 700; letter-spacing: 0.12em; color: #8B97A2; text-transform: uppercase;">Điều khiển</div>
+
+      <div class="btn">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1668A8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5v7"></path><path d="M7.2 7.4a7 7 0 1 0 9.6 0"></path></svg>
+        <div><div style="font-size: 21px; font-weight: 700;">Đưa về video chờ</div><div style="font-size: 16px; color: #8B97A2; margin-top: 2px;">5 màn quay lại bể cá</div></div>
+      </div>
+
+      <div class="btn">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E3E4A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="13" rx="2"></rect><path d="m6 8.5 12 7"></path></svg>
+        <div><div style="font-size: 21px; font-weight: 700;">Tắt hẳn màn hình</div><div style="font-size: 16px; color: #8B97A2; margin-top: 2px;">Màn đen, bỏ qua mọi thao tác chạm</div></div>
+      </div>
+
+      <div class="btn">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1668A8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h5.5V4"></path><path d="M4.6 9.4A8 8 0 1 1 4 14"></path></svg>
+        <div><div style="font-size: 21px; font-weight: 700;">Nhận diện màn</div><div style="font-size: 16px; color: #8B97A2; margin-top: 2px;">Hiện số màn to lên 10 giây</div></div>
+      </div>
+
+      <div class="btn" style="border-color: #E3B4B0; background: #FDF7F6;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B24A41" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9.5h-5.5V4"></path><path d="M19.4 9.4A8 8 0 1 0 20 14"></path></svg>
+        <div><div style="font-size: 21px; font-weight: 700; color: #B24A41;">Reset hệ thống</div><div style="font-size: 16px; color: #A2726C; margin-top: 2px;">Kết thúc mọi đoạn chat, tải lại 5 màn</div></div>
+      </div>
+
+      <div style="flex-grow: 1;"></div>
+
+      <div style="background: #FFFFFF; border: 2px solid #DCE3E9; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 9px;">
+        <div style="font-size: 15px; font-weight: 700; letter-spacing: 0.12em; color: #8B97A2; text-transform: uppercase;">Hôm nay</div>
+        <div style="display: flex; justify-content: space-between; font-size: 19px;"><span style="color: #5A6B78;">Lượt trò chuyện</span><span style="font-weight: 700;">37</span></div>
+        <div style="display: flex; justify-content: space-between; font-size: 19px;"><span style="color: #5A6B78;">Thời gian trung bình</span><span style="font-weight: 700;">1 ph 46 s</span></div>
+        <div style="display: flex; justify-content: space-between; font-size: 19px;"><span style="color: #5A6B78;">Lỗi kết nối AI</span><span style="font-weight: 700; color: #B24A41;">2</span></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

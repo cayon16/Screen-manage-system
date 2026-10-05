@@ -1,0 +1,60 @@
+Overview dự án: 
+Xây dựng ứng dụng quản lý 5 màn hình máy tính treo ở hành lang bệnh viện (màn 2,4 có cảm ứng còn lại là màn trình chiếu bình thường), màn 2 và 4
+được kết nối với 1 hệ thống chatbot đã build (hiện chưa có chi tiết tài liệu cụ thể) thông qua API, màn 1,3,5 chỉ nhằm mục đích trình chiếu slide có sẵn
+(không nhận tương tác và không ảnh hưởng gì đến luồng hoạt động hệ thống). Khi không có tương tác gì thì hệ thống vào chế độ ngủ (tạm gọi là Standby),
+còn nếu có tương tác thì hệ thống vẫn hoạt động bình thường. 
+
+
+
+
+1. Phân bổ vai trò của 5 màn hình (Từ trái sang phải)
+--------------------------------------------------------------------
+Ta có 1 máy tính chủ (sẽ scale lên 1 sever sau này) quản lý 5 màn hình này
+* Màn 1, 3, 5 (Màn hình thụ động): Chỉ dùng để hiển thị 1 đoạn video có trước hoặc slide trình chiếu (đã có) (bảng thông tin, nội quy, ...). Tuyệt đối không có tính năng tương tác Chat với AI (tạm gọi AI là Superdoc).
+* Màn 2 (Màn hình điều khiển chính): Có thể tương tác như màn hình cảm ứng. Có menu cho phép người dùng chọn 1 trong 2 chế độ: Trình chiếu thông tin bệnh viện (Hospital Information) (Điều khiển cả 5 màn hình) hoặc Chat với AI (Superdoc).
+* Màn 4 (Màn hình Chat chuyên dụng): Có thể tương tác như màn hình cảm ứng. Chỉ có duy nhất tính năng tương tác Chat với Superdoc. Người dùng cứ chạm vào là bắt đầu chat.
+
+
+
+2. Các trạng thái hệ thống:
+* Trạng thái bình thường (normal):
+   -  Xảy ra khi 5 màn hoạt động bình thường 
+
+
+* Trạng thái ngủ (Standby):
+   -  Điều kiện kích hoạt: sau 1 khoảng thời gian (có thể tùy chỉnh) không có ai tương tác gì với hệ thống (không có ai tương tác ở màn 2,4 và ở máy chủ ko có ai thao tác gì).
+   -  Những gì diễn ra ở chế độ Standby: 1 video chung sẽ được hiển thị lên cả 5 màn. Tạm thời sẽ là 1 video con cá bơi lội thật chậm. Vấn đề là con cá
+      này sẽ bơi từ màn này qua màn khác (5 màn cần đồng nhất khâu trình chiếu, ko được 5 màn 5 video độc lập). 
+   -  Điều kiện thoát khỏi Standby: nếu đang trong trạng thái Standby, nếu có tương tác trở lại (hoặc có người đến chạm vào màn 2 or 4 hoặc có người dùng 
+      tương tác với máy tính chủ) khi đó hệ thống tự động quay về trạng thái hoạt động như bình thường (cả 5 màn đều quay về chức năng vốn có của nó)
+
+
+3. Chi tiết hơn về màn 2 và 4:
+
+* Về tương tác với AI superdoc:
+   -  Các màn này đều có kết nối đến chatbot Superdoc thông qua API (chưa có, cần tự xây thêm) (có thể thiết kế tạm thời đề call API gemini thay vào tạm để test cũng được).
+   -  các màn náy không trình chiếu gì cả mà nó đóng vai trò như 1 interface giao tiếp giữa chatbot và người dùng
+   -  Riêng màn 2 là màn hình chính nên nó có 2 chế độ để người dùng chọn: chế độ trình chiếu và chế độ chat (như mặc định màn 4)
+      + Chế độ trình chiếu: sẽ có nút cho phép người dùng hiển thị các thông tin muốn xem (ví dụ: click vào nội quy bệnh viện thì màn phụ trách nội quy sẽ phải
+      trình chiếu nội quy, ...). Tạm thời chưa rõ có bao nhiêu slide trình chiếu nhưng cứ tạm thiết kế mỗi màn có 2 slide chình triếu khác nhau --> tương đương
+      6 nút trong chế độ trình chiếu.
+
+      + Chế độ chat: khi người dùng bấm chat sẽ hiện lên 1 cửa số chat như chatgpt, gemini, ... (chỉ chat ko có các phiên chat khác, chọn model, gửi ảnh, ...)
+      Khi người dùng chat xong có thể bấm vào ô kết thúc đoạn chat để endchat --> tự quay về trạng thái ban đầu (màn 2 có 2 ô là chế độ trình chiếu và chế độ chat
+      còn màn 4 chỉ có 1 ô ghi chế độ chat)
+      
+      Cần làm rõ: 2 màn chat độc lập nhau không liên quan gì nhau. Sau 1 khoảng thời gian (tự đặt tham số, phải nhỏ hơn thời gian vào chế độ Standby) 
+      mà ko thấy người dùng nhập gì tiếp sẽ hiển thị 1 ô thông báo xem bạn còn ở đó ko, sau 1 khoảng thời gian nữa mà vẫn ko có gì thì tự kết thúc 
+      đoạn chat và quay về màn hình chọn chế độ ban đầu.
+
+
+   -  Về đoạn chat: API cần đảm nhận việc đếm thời gian và thông báo cho AI kết thúc đoạn chat nếu cần và lưu toàn bộ lịch sử trò chuyện lại vào database 
+      (không cần chi tiết người chat, coi tất cả đoạn chat như khách lạ).
+
+
+
+
+4.Yêu cầu kỹ thuật:
+
+* Hiện chưa có chi tiết, có thể dùng giao diện cơ bản với FastAPI, python, ... Miễn sao không ngốn quá nhiều toàn bộ tài nguyên của máy. 
+* Cần đảm bảo code chạy chính xác 100%, khi code cần chia rõ nhiều phần nhỏ cho mỗi module để sau này scale up hệ thống lên dễ dàng hơn

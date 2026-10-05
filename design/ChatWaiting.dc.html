@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif; }
+    a { color: #1668A8; } a:hover { color: #0F4E7E; }
+    @keyframes dot { 0%, 60%, 100% { opacity: 0.22; } 30% { opacity: 1; } }
+    .dot { width: 18px; height: 18px; border-radius: 99px; background: #1668A8; animation: dot 1.3s infinite; }
+  </style>
+</helmet>
+
+<div style="width: 1920px; height: 1080px; box-sizing: border-box; background: #FFFFFF; color: #101A22; display: flex; flex-direction: column; overflow: hidden;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; border-bottom: 2px solid #E4E9ED;">
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <div style="width: 70px; height: 70px; border-radius: 20px; background: #EDF3F8; display: flex; align-items: center; justify-content: center;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1668A8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.5 12.5c0 3.9-3.8 7-8.5 7-1 0-2-.15-2.9-.42L4 20.5l1.5-3.6C4.2 15.7 3.5 14.2 3.5 12.5c0-3.9 3.8-7 8.5-7s8.5 3.1 8.5 7Z"></path>
+          <path d="M12 9.3v4.4M9.8 11.5h4.4"></path>
+        </svg>
+      </div>
+      <div>
+        <div style="font-size: 38px; font-weight: 700; line-height: 1.1;">Superdoc</div>
+        <div style="font-size: 25px; font-weight: 500; color: #1668A8; margin-top: 3px;">Đang soạn câu trả lời…</div>
+      </div>
+    </div>
+    <div style="display: flex; gap: 18px;">
+      <div style="border: 3px solid #C3CDD6; border-radius: 16px; padding: 20px 34px; font-size: 29px; font-weight: 600; color: #2E3E4A;">Xem thông tin bệnh viện</div>
+      <div style="border: 3px solid #C3CDD6; border-radius: 16px; padding: 20px 34px; font-size: 29px; font-weight: 600; color: #2E3E4A;">Kết thúc</div>
+    </div>
+  </div>
+
+  <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 28px; padding: 40px 48px; overflow: hidden;">
+
+    <div style="display: flex; justify-content: flex-end;">
+      <div style="max-width: 1100px; background: #EDF3F8; border: 2px solid #BBD3E6; border-radius: 28px 28px 6px 28px; padding: 26px 38px; font-size: 38px; font-weight: 500; line-height: 1.4;">Bệnh viện mấy giờ mở cửa?</div>
+    </div>
+
+    <div style="display: flex; justify-content: flex-start;">
+      <div style="max-width: 1240px; background: #F5F7F9; border: 2px solid #DCE3E9; border-radius: 28px 28px 28px 6px; padding: 26px 38px; font-size: 38px; font-weight: 400; line-height: 1.5; text-wrap: pretty;">Bệnh viện khám từ 07:00 đến 16:30 các ngày thứ 2 đến thứ 6, thứ 7 khám buổi sáng đến 12:00. Khoa Cấp cứu trực 24/7 kể cả chủ nhật và ngày lễ.</div>
+    </div>
+
+    <div style="display: flex; justify-content: flex-end;">
+      <div style="max-width: 1100px; background: #EDF3F8; border: 2px solid #BBD3E6; border-radius: 28px 28px 6px 28px; padding: 26px 38px; font-size: 38px; font-weight: 500; line-height: 1.4;">Khoa cấp cứu ở đâu?</div>
+    </div>
+
+    <div style="display: flex; justify-content: flex-start;">
+      <div style="background: #F5F7F9; border: 2px solid #DCE3E9; border-radius: 28px 28px 28px 6px; padding: 32px 42px; display: flex; align-items: center; gap: 14px;">
+        <span class="dot"></span>
+        <span class="dot" style="animation-delay: 0.18s;"></span>
+        <span class="dot" style="animation-delay: 0.36s;"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 22px; padding: 30px 48px 38px 48px; border-top: 2px solid #E4E9ED;">
+    <div style="flex-grow: 1; background: #F0F2F4; border: 3px solid #DCE3E9; border-radius: 22px; padding: 28px 36px; font-size: 34px; font-weight: 400; color: #9AA8B4;">Đang chờ Superdoc trả lời…</div>
+    <div style="width: 128px; height: 94px; border-radius: 22px; background: #F0F2F4; display: flex; align-items: center; justify-content: center;">
+      <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#BCC6CF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12h15M13 5.5 19.5 12 13 18.5"></path></svg>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

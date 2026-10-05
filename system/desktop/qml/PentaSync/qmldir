@@ -1,0 +1,23 @@
+module PentaSync
+singleton Theme 1.0 Theme.qml
+singleton Icons 1.0 Icons.qml
+Icon 1.0 Icon.qml
+Stage 1.0 Stage.qml
+AppButton 1.0 AppButton.qml
+IconTile 1.0 IconTile.qml
+HospitalMark 1.0 HospitalMark.qml
+ConnectingView 1.0 ConnectingView.qml
+StandbyView 1.0 StandbyView.qml
+BlackoutView 1.0 BlackoutView.qml
+MenuView 1.0 MenuView.qml
+SlideControlView 1.0 SlideControlView.qml
+PromptChatView 1.0 PromptChatView.qml
+SlideView 1.0 SlideView.qml
+ChatView 1.0 ChatView.qml
+ChatBubble 1.0 ChatBubble.qml
+TypingDots 1.0 TypingDots.qml
+OnScreenKeyboard 1.0 OnScreenKeyboard.qml
+KeyButton 1.0 KeyButton.qml
+Tier1Dialog 1.0 Tier1Dialog.qml
+ConfirmSwitchDialog 1.0 ConfirmSwitchDialog.qml
+IdentifyOverlay 1.0 IdentifyOverlay.qml

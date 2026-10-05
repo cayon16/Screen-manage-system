@@ -1,0 +1,909 @@
+2026-09-17 15:50:03,661 INFO ===== PentaSync khởi động =====
+2026-09-17 15:50:04,221 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 15:50:04,470 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 | không dùng: không
+2026-09-17 15:50:07,037 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 15:50:07,451 INFO Backend sẵn sàng
+2026-09-17 15:50:18,647 INFO PentaSync đang tắt
+2026-09-17 15:50:19,680 ERROR Backend lỗi tiến trình: ProcessError.Crashed
+2026-09-17 15:50:53,154 INFO ===== PentaSync khởi động =====
+2026-09-17 15:50:53,327 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 15:50:53,534 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 | không dùng: không
+2026-09-17 15:50:55,500 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 15:50:56,358 INFO Backend sẵn sàng
+2026-09-17 15:51:09,854 INFO PentaSync đang tắt
+2026-09-17 15:52:54,369 INFO ===== PentaSync khởi động =====
+2026-09-17 15:52:54,646 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 15:52:54,849 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 | không dùng: không
+2026-09-17 15:52:56,812 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 15:52:57,670 INFO Backend sẵn sàng
+2026-09-17 15:53:11,121 INFO PentaSync đang tắt
+2026-09-17 15:53:44,509 INFO ===== PentaSync khởi động =====
+2026-09-17 15:53:44,683 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 15:53:44,894 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 | không dùng: không
+2026-09-17 15:53:46,858 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 15:53:47,718 INFO Backend sẵn sàng
+2026-09-17 15:53:57,146 INFO PentaSync đang tắt
+2026-09-17 15:56:44,546 INFO ===== PentaSync khởi động =====
+2026-09-17 15:56:44,719 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 15:56:45,086 INFO Bố cục: 6 màn | quản lý: \\.\DISPLAY1 | hiển thị: \\.\DISPLAY2→màn 1, \\.\DISPLAY3→màn 2 (cảm ứng), \\.\DISPLAY4→màn 3, \\.\DISPLAY5→màn 4 (cảm ứng), \\.\DISPLAY6→màn 5 | không dùng: không
+2026-09-17 15:56:46,587 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 15:56:46,964 INFO Backend sẵn sàng
+2026-09-17 15:57:08,651 WARNING Reset hệ thống từ màn quản lý
+2026-09-17 15:57:10,498 INFO Bố cục: 6 màn | quản lý: \\.\DISPLAY1 | hiển thị: \\.\DISPLAY2→màn 1, \\.\DISPLAY3→màn 2 (cảm ứng), \\.\DISPLAY4→màn 3, \\.\DISPLAY5→màn 4 (cảm ứng), \\.\DISPLAY6→màn 5 | không dùng: không
+2026-09-17 15:57:10,501 WARNING Màn 4 mất kết nối backend
+2026-09-17 15:57:10,505 WARNING Màn 5 mất kết nối backend
+2026-09-17 15:57:10,538 WARNING Màn 3 mất kết nối backend
+2026-09-17 15:57:10,540 WARNING Màn 2 mất kết nối backend
+2026-09-17 15:57:10,542 WARNING Màn 1 mất kết nối backend
+2026-09-17 15:57:13,354 INFO PentaSync đang tắt
+2026-09-17 15:58:25,772 INFO ===== PentaSync khởi động =====
+2026-09-17 15:58:25,954 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 15:58:26,392 INFO Bố cục: 6 màn | quản lý: \\.\DISPLAY1 | hiển thị: \\.\DISPLAY2→màn 1, \\.\DISPLAY3→màn 2 (cảm ứng), \\.\DISPLAY4→màn 3, \\.\DISPLAY5→màn 4 (cảm ứng), \\.\DISPLAY6→màn 5 | không dùng: không
+2026-09-17 15:58:27,811 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 15:58:28,430 INFO Backend sẵn sàng
+2026-09-17 15:59:09,118 WARNING Reset hệ thống từ màn quản lý
+2026-09-17 15:59:09,900 INFO Bố cục: 6 màn | quản lý: \\.\DISPLAY1 | hiển thị: \\.\DISPLAY2→màn 1, \\.\DISPLAY3→màn 2 (cảm ứng), \\.\DISPLAY4→màn 3, \\.\DISPLAY5→màn 4 (cảm ứng), \\.\DISPLAY6→màn 5 | không dùng: không
+2026-09-17 15:59:18,904 INFO PentaSync đang tắt
+2026-09-17 15:59:20,005 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,006 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,022 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,023 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,052 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,052 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,053 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,053 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,085 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,085 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,085 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,086 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,115 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,115 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,146 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,146 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,176 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,176 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,207 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,208 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 15:59:20,237 WARNING [qt] QFFmpeg::Demuxer received AVPacket with pts == AV_NOPTS_VALUE
+2026-09-17 15:59:20,237 WARNING [qt] Demuxing failed -10054 Error number -10054 occurred
+2026-09-17 16:00:09,175 INFO ===== PentaSync khởi động =====
+2026-09-17 16:00:09,392 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 16:00:09,921 INFO Bố cục: 6 màn | quản lý: \\.\DISPLAY1 | hiển thị: \\.\DISPLAY2→màn 1, \\.\DISPLAY3→màn 2 (cảm ứng), \\.\DISPLAY4→màn 3, \\.\DISPLAY5→màn 4 (cảm ứng), \\.\DISPLAY6→màn 5 | không dùng: không
+2026-09-17 16:00:11,364 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 16:00:11,829 INFO Backend sẵn sàng
+2026-09-17 16:00:36,639 INFO PentaSync đang tắt
+2026-09-17 21:00:12,407 INFO ===== PentaSync khởi động =====
+2026-09-17 21:00:12,630 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 21:00:12,918 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-17 21:00:15,030 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 21:00:15,652 INFO Backend sẵn sàng
+2026-09-17 21:00:22,983 INFO PentaSync đang tắt
+2026-09-17 21:00:38,628 INFO ===== PentaSync khởi động =====
+2026-09-17 21:00:38,762 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 21:00:38,931 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-17 21:00:40,290 INFO Backend sẵn sàng
+2026-09-17 21:00:40,383 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 21:00:49,086 INFO PentaSync đang tắt
+2026-09-17 21:03:05,333 INFO Đã đặt card đồ hoạ hiệu năng cao cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe
+2026-09-17 21:03:05,373 INFO ===== PentaSync khởi động =====
+2026-09-17 21:03:05,507 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 21:03:06,567 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-17 21:03:06,591 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 21:03:06,591 INFO [qt]   using this adapter
+2026-09-17 21:03:06,592 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 21:03:06,592 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 21:03:06,953 INFO Backend sẵn sàng
+2026-09-17 21:03:07,144 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 21:03:13,891 INFO PentaSync đang tắt
+2026-09-17 22:10:29,979 INFO Đã đặt card đồ hoạ hiệu năng cao cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe
+2026-09-17 22:10:30,024 INFO ===== PentaSync khởi động (backend http://127.0.0.1:56662) =====
+2026-09-17 22:10:30,266 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:10:32,062 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:10:32,063 INFO [qt]   using this adapter
+2026-09-17 22:10:32,063 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:10:32,063 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:10:32,482 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-17 22:10:32,539 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:10:32,557 INFO Backend sẵn sàng
+2026-09-17 22:10:32,595 WARNING [qt] Could not open media. FFmpeg error description: Immediate exit requested
+2026-09-17 22:10:34,984 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-17 22:11:08,028 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:11:08,029 INFO [qt]   using this adapter
+2026-09-17 22:11:08,029 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:11:08,029 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:11:27,479 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-17 22:11:34,427 INFO Người vận hành thoát app
+2026-09-17 22:11:34,448 INFO PentaSync đang tắt
+2026-09-17 22:12:14,607 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:12:14,635 INFO ===== PentaSync khởi động (backend http://127.0.0.1:61331) =====
+2026-09-17 22:12:14,737 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:12:16,415 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:12:16,415 INFO [qt]   using this adapter
+2026-09-17 22:12:16,415 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:12:16,415 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:12:16,768 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-17 22:12:16,820 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:12:16,823 INFO Backend sẵn sàng
+2026-09-17 22:12:16,856 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-17 22:12:19,266 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-17 22:12:52,331 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:12:52,332 INFO [qt]   using this adapter
+2026-09-17 22:12:52,332 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:12:52,332 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:13:11,780 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-17 22:13:18,722 INFO Người vận hành thoát app
+2026-09-17 22:13:18,745 INFO PentaSync đang tắt
+2026-09-17 22:13:20,375 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:13:20,404 INFO ===== PentaSync khởi động (backend http://127.0.0.1:49861) =====
+2026-09-17 22:13:20,469 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:13:20,870 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:13:20,870 INFO [qt]   using this adapter
+2026-09-17 22:13:20,870 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:13:20,870 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:13:21,166 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-17 22:13:21,167 WARNING Cảm ứng: 1/1 thiết bị cảm ứng chưa gắn với màn nào đang dùng — chạy Control Panel → Tablet PC Settings → Setup
+2026-09-17 22:13:21,499 INFO Backend sẵn sàng
+2026-09-17 22:13:21,687 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:13:23,673 INFO Màn 1 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-17 22:13:30,877 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:13:30,877 INFO [qt]   using this adapter
+2026-09-17 22:13:30,877 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:13:30,879 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:13:46,174 WARNING Màn 1 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-17 22:13:56,947 INFO Người vận hành thoát app
+2026-09-17 22:13:56,956 INFO PentaSync đang tắt
+2026-09-17 22:14:38,761 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:14:38,794 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:14:38,861 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:14:39,283 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:14:39,283 INFO [qt]   using this adapter
+2026-09-17 22:14:39,283 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:14:39,283 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:14:39,581 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:14:39,587 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:14:39,587 INFO [qt]   using this adapter
+2026-09-17 22:14:39,587 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:14:39,587 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:14:39,894 INFO Backend sẵn sàng
+2026-09-17 22:14:40,081 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:14:56,934 INFO PentaSync đang tắt
+2026-09-17 22:15:29,333 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:15:29,363 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:15:29,429 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:15:31,169 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:15:31,169 INFO [qt]   using this adapter
+2026-09-17 22:15:31,169 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:15:31,169 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:15:31,505 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:15:31,515 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:15:31,515 INFO [qt]   using this adapter
+2026-09-17 22:15:31,515 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:15:31,515 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:15:31,611 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:15:31,642 INFO Backend sẵn sàng
+2026-09-17 22:15:48,853 INFO PentaSync đang tắt
+2026-09-17 22:16:12,650 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:16:12,675 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:16:12,741 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:16:14,477 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:16:14,477 INFO [qt]   using this adapter
+2026-09-17 22:16:14,477 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:16:14,477 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:16:14,872 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:16:14,880 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:16:14,882 INFO [qt]   using this adapter
+2026-09-17 22:16:14,882 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:16:14,882 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:16:14,980 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:16:15,012 INFO Backend sẵn sàng
+2026-09-17 22:16:32,390 INFO PentaSync đang tắt
+2026-09-17 22:16:53,462 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:16:53,492 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:16:53,557 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:16:55,405 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:16:55,405 INFO [qt]   using this adapter
+2026-09-17 22:16:55,406 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:16:55,406 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:16:55,770 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:16:55,778 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:16:55,778 INFO [qt]   using this adapter
+2026-09-17 22:16:55,778 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:16:55,778 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:16:55,871 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:16:55,903 INFO Backend sẵn sàng
+2026-09-17 22:17:14,011 INFO PentaSync đang tắt
+2026-09-17 22:21:02,657 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:21:02,685 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:21:02,750 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:21:04,456 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:21:04,456 INFO [qt]   using this adapter
+2026-09-17 22:21:04,459 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:21:04,459 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:21:04,787 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:21:04,795 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:21:04,795 INFO [qt]   using this adapter
+2026-09-17 22:21:04,795 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:21:04,797 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:21:04,888 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:21:04,922 INFO Backend sẵn sàng
+2026-09-17 22:21:23,822 INFO PentaSync đang tắt
+2026-09-17 22:21:25,756 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:21:25,786 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:21:25,864 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:21:26,198 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:21:26,198 INFO [qt]   using this adapter
+2026-09-17 22:21:26,198 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:21:26,198 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:21:26,639 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:21:26,646 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:21:26,646 INFO [qt]   using this adapter
+2026-09-17 22:21:26,646 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:21:26,646 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:21:26,890 INFO Backend sẵn sàng
+2026-09-17 22:21:27,040 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:21:45,812 INFO PentaSync đang tắt
+2026-09-17 22:25:53,799 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:25:53,830 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:25:53,910 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:25:53,910 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:25:55,503 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:25:55,520 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:25:55,520 INFO [qt]   using this adapter
+2026-09-17 22:25:55,520 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:25:55,520 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:25:55,834 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:25:55,834 INFO [qt]   using this adapter
+2026-09-17 22:25:55,835 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:25:55,835 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:25:55,931 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:25:55,962 INFO Backend sẵn sàng
+2026-09-17 22:26:14,537 INFO PentaSync đang tắt
+2026-09-17 22:26:16,424 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:26:16,452 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:26:16,517 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:26:16,518 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:26:16,812 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:26:16,827 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:26:16,827 INFO [qt]   using this adapter
+2026-09-17 22:26:16,828 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:26:16,828 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:26:18,105 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:26:18,105 INFO [qt]   using this adapter
+2026-09-17 22:26:18,107 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:26:18,107 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:26:18,196 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:26:18,231 INFO Backend sẵn sàng
+2026-09-17 22:26:35,880 INFO PentaSync đang tắt
+2026-09-17 22:26:37,752 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:26:37,782 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:26:37,849 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:26:37,850 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:26:38,165 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:26:38,181 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:26:38,181 INFO [qt]   using this adapter
+2026-09-17 22:26:38,181 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:26:38,181 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:26:38,442 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:26:38,442 INFO [qt]   using this adapter
+2026-09-17 22:26:38,443 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:26:38,443 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:26:38,874 INFO Backend sẵn sàng
+2026-09-17 22:26:39,006 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:26:57,239 INFO PentaSync đang tắt
+2026-09-17 22:26:59,079 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:26:59,110 INFO ===== PentaSync khởi động (backend http://127.0.0.1:58143) =====
+2026-09-17 22:26:59,200 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:26:59,201 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:27:00,215 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f89d9378c0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:27:00,215 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-17 22:27:00,235 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:27:00,235 INFO [qt]   using this adapter
+2026-09-17 22:27:00,235 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:27:00,235 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:27:00,526 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:27:00,529 INFO Backend sẵn sàng
+2026-09-17 22:27:02,716 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-17 22:27:35,774 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:27:35,774 INFO [qt]   using this adapter
+2026-09-17 22:27:35,774 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:27:35,775 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:27:55,228 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-17 22:27:55,244 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f89d9378c0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:28:02,178 INFO Người vận hành thoát app
+2026-09-17 22:28:02,183 INFO PentaSync đang tắt
+2026-09-17 22:28:21,652 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:28:21,681 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:28:21,748 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:28:21,748 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:28:23,544 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:28:23,565 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:28:23,565 INFO [qt]   using this adapter
+2026-09-17 22:28:23,565 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:28:23,565 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:28:23,872 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:28:23,872 INFO [qt]   using this adapter
+2026-09-17 22:28:23,872 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:28:23,872 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:28:23,957 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:28:23,993 INFO Backend sẵn sàng
+2026-09-17 22:28:42,646 INFO PentaSync đang tắt
+2026-09-17 22:28:44,543 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:28:44,571 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:28:44,639 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:28:44,639 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:28:44,945 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:28:44,962 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:28:44,962 INFO [qt]   using this adapter
+2026-09-17 22:28:44,962 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:28:44,963 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:28:46,254 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:28:46,254 INFO [qt]   using this adapter
+2026-09-17 22:28:46,255 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:28:46,255 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:28:46,346 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:28:46,392 INFO Backend sẵn sàng
+2026-09-17 22:29:04,118 INFO PentaSync đang tắt
+2026-09-17 22:29:06,053 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:29:06,083 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:29:06,150 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:29:06,151 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:29:06,443 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:29:06,460 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:29:06,460 INFO [qt]   using this adapter
+2026-09-17 22:29:06,465 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:29:06,465 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:29:06,832 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:29:06,832 INFO [qt]   using this adapter
+2026-09-17 22:29:06,832 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:29:06,832 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:29:07,171 INFO Backend sẵn sàng
+2026-09-17 22:29:07,312 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:29:25,583 INFO PentaSync đang tắt
+2026-09-17 22:29:46,497 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:29:46,527 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:29:46,592 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:29:46,592 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:29:47,485 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:29:47,501 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:29:47,502 INFO [qt]   using this adapter
+2026-09-17 22:29:47,502 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:29:47,502 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:29:47,809 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:29:47,811 INFO [qt]   using this adapter
+2026-09-17 22:29:47,811 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:29:47,811 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:29:47,902 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:29:47,934 INFO Backend sẵn sàng
+2026-09-17 22:30:06,723 INFO PentaSync đang tắt
+2026-09-17 22:30:08,610 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:30:08,639 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:30:08,703 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:30:08,704 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:30:08,982 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:30:08,996 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:30:08,996 INFO [qt]   using this adapter
+2026-09-17 22:30:08,997 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:30:08,997 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:30:09,470 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:30:09,470 INFO [qt]   using this adapter
+2026-09-17 22:30:09,470 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:30:09,470 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:30:09,733 INFO Backend sẵn sàng
+2026-09-17 22:30:09,870 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:30:28,196 INFO PentaSync đang tắt
+2026-09-17 22:30:30,311 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:30:30,338 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:30:30,403 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:30:30,404 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:30:30,673 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\HALF0→màn 2 (cảm ứng) [1280x1440, ?], \\.\HALF1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-17 22:30:30,690 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:30:30,690 INFO [qt]   using this adapter
+2026-09-17 22:30:30,690 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:30:30,690 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:30:31,119 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:30:31,119 INFO [qt]   using this adapter
+2026-09-17 22:30:31,119 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:30:31,119 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:30:31,421 INFO Backend sẵn sàng
+2026-09-17 22:30:31,551 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:30:49,863 INFO PentaSync đang tắt
+2026-09-17 22:31:23,206 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-17 22:31:23,231 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-17 22:31:23,298 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-17 22:31:23,298 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-17 22:31:24,933 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2193e512a30)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:31:24,964 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2193e678080)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:31:24,996 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2193e817570)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:31:25,026 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2193e8dec00)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:31:25,058 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2193e98e900)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:31:25,105 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:31:25,106 INFO [qt]   using this adapter
+2026-09-17 22:31:25,106 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:31:25,106 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:31:25,385 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:31:25,385 INFO [qt]   using this adapter
+2026-09-17 22:31:25,385 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:31:25,386 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:31:25,481 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:31:25,481 INFO [qt]   using this adapter
+2026-09-17 22:31:25,482 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:31:25,482 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:31:25,572 INFO Bố cục: 6 màn | quản lý: \\.\DISPLAY1 | hiển thị: \\.\DISPLAY2→màn 1 [1920x1080, ?], \\.\DISPLAY3→màn 2 (cảm ứng) [1920x1080, ?], \\.\DISPLAY4→màn 3 [1920x1080, ?], \\.\DISPLAY5→màn 4 (cảm ứng) [1920x1080, ?], \\.\DISPLAY6→màn 5 [1920x1080, ?] | không dùng: không
+2026-09-17 22:31:25,580 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:31:25,581 INFO [qt]   using this adapter
+2026-09-17 22:31:25,581 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:31:25,582 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:31:25,677 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-17 22:31:25,707 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:31:25,708 INFO [qt]   using this adapter
+2026-09-17 22:31:25,708 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:31:25,708 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:31:25,801 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:31:25,801 INFO [qt]   using this adapter
+2026-09-17 22:31:25,801 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:31:25,803 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:31:26,200 INFO Backend sẵn sàng
+2026-09-17 22:32:01,263 WARNING Reset hệ thống từ màn quản lý
+2026-09-17 22:32:01,615 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x219d8fe8f30)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:32:01,636 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x219d8fe3130)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:32:01,656 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x219d8f260c0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:32:01,676 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2192685d2b0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:32:01,699 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2193e8dc100)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-17 22:32:01,700 INFO Bố cục: 6 màn | quản lý: \\.\DISPLAY1 | hiển thị: \\.\DISPLAY2→màn 1 [1920x1080, ?], \\.\DISPLAY3→màn 2 (cảm ứng) [1920x1080, ?], \\.\DISPLAY4→màn 3 [1920x1080, ?], \\.\DISPLAY5→màn 4 (cảm ứng) [1920x1080, ?], \\.\DISPLAY6→màn 5 [1920x1080, ?] | không dùng: không
+2026-09-17 22:32:01,728 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:32:01,728 INFO [qt]   using this adapter
+2026-09-17 22:32:01,728 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:32:01,728 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:32:01,830 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:32:01,830 INFO [qt]   using this adapter
+2026-09-17 22:32:01,830 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:32:01,831 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:32:01,945 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:32:01,945 INFO [qt]   using this adapter
+2026-09-17 22:32:01,945 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:32:01,946 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:32:02,038 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:32:02,039 INFO [qt]   using this adapter
+2026-09-17 22:32:02,039 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:32:02,039 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:32:02,129 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-17 22:32:02,130 INFO [qt]   using this adapter
+2026-09-17 22:32:02,130 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-17 22:32:02,130 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-17 22:32:09,264 INFO PentaSync đang tắt
+2026-09-30 17:06:53,053 INFO Đã đặt card đồ hoạ hiệu năng cao cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe
+2026-09-30 17:06:53,130 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-30 17:06:54,264 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:06:54,265 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:06:56,574 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_45(0x2595cde4030)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:06:56,574 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:06:56,635 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:06:56,635 INFO [qt]   using this adapter
+2026-09-30 17:06:56,636 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:06:56,636 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:06:59,067 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:07:28,563 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:07:28,563 INFO [qt]   using this adapter
+2026-09-30 17:07:28,564 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:07:28,564 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:07:46,582 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:07:46,598 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_45(0x2595cde4030)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:07:53,878 INFO PentaSync đang tắt
+2026-09-30 17:08:20,511 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:08:20,550 INFO ===== PentaSync khởi động (backend http://127.0.0.1:55385) =====
+2026-09-30 17:08:20,630 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:08:20,631 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:08:22,342 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f0c2c3dea0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:08:22,344 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:08:22,372 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:08:22,373 INFO [qt]   using this adapter
+2026-09-30 17:08:22,373 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:08:22,373 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:08:22,778 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:08:22,805 INFO Backend sẵn sàng
+2026-09-30 17:08:24,845 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:08:55,185 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:08:55,185 INFO [qt]   using this adapter
+2026-09-30 17:08:55,185 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:08:55,187 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:09:12,356 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:09:12,367 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f0c2c3dea0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:09:20,544 INFO PentaSync đang tắt
+2026-09-30 17:10:39,145 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:10:39,179 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-30 17:10:39,252 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:10:39,253 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:10:40,920 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x219d4bdab70)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:10:40,920 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:10:40,954 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:10:40,954 INFO [qt]   using this adapter
+2026-09-30 17:10:40,954 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:10:40,955 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:10:41,299 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:10:41,301 INFO Backend sẵn sàng
+2026-09-30 17:10:41,332 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:10:43,412 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:10:46,820 INFO PentaSync đang tắt
+2026-09-30 17:11:40,365 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:11:40,397 INFO ===== PentaSync khởi động (backend http://127.0.0.1:51826) =====
+2026-09-30 17:11:40,471 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:11:40,471 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:11:42,125 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1afd03b1b20)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:11:42,125 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:11:42,154 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:11:42,154 INFO [qt]   using this adapter
+2026-09-30 17:11:42,154 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:11:42,155 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:11:42,511 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:11:42,515 INFO Backend sẵn sàng
+2026-09-30 17:11:42,554 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:11:44,614 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:12:16,432 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:12:16,435 INFO [qt]   using this adapter
+2026-09-30 17:12:16,435 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:12:16,435 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:12:32,170 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:12:32,187 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1afd03b1b20)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:12:41,857 INFO PentaSync đang tắt
+2026-09-30 17:13:28,621 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:13:28,659 INFO ===== PentaSync khởi động (backend http://127.0.0.1:56615) =====
+2026-09-30 17:13:28,750 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:13:28,751 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:13:30,514 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2bedc0e8700)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:13:30,514 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:13:30,541 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:13:30,542 INFO [qt]   using this adapter
+2026-09-30 17:13:30,542 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:13:30,543 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:13:30,919 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:13:30,927 INFO Backend sẵn sàng
+2026-09-30 17:13:30,964 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:13:33,003 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:14:04,439 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:14:04,439 INFO [qt]   using this adapter
+2026-09-30 17:14:04,439 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:14:04,440 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:14:20,506 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:14:20,522 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2bedc0e8700)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:14:29,797 INFO PentaSync đang tắt
+2026-09-30 17:14:31,633 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:14:31,666 INFO ===== PentaSync khởi động (backend http://127.0.0.1:63546) =====
+2026-09-30 17:14:31,744 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:14:31,744 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:14:32,796 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x207258af3e0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:14:32,796 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:14:32,836 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:14:32,836 INFO [qt]   using this adapter
+2026-09-30 17:14:32,837 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:14:32,837 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:14:33,233 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:14:33,237 INFO Backend sẵn sàng
+2026-09-30 17:14:33,284 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:14:35,297 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:15:07,978 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:15:07,978 INFO [qt]   using this adapter
+2026-09-30 17:15:07,978 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:15:07,979 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:15:22,810 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:15:22,827 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x207258af3e0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:15:33,372 INFO PentaSync đang tắt
+2026-09-30 17:17:15,791 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:17:15,828 INFO ===== PentaSync khởi động (backend http://127.0.0.1:55799) =====
+2026-09-30 17:17:15,916 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:17:15,917 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:17:17,673 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x28a52bee190)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:17:17,673 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:17:17,707 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:17:17,707 INFO [qt]   using this adapter
+2026-09-30 17:17:17,707 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:17:17,707 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:17:18,048 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:17:18,054 INFO Backend sẵn sàng
+2026-09-30 17:17:18,085 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:17:20,180 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:17:54,876 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:17:54,876 INFO [qt]   using this adapter
+2026-09-30 17:17:54,876 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:17:54,876 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:18:12,725 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:18:12,742 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x28a52bee190)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:18:20,309 INFO PentaSync đang tắt
+2026-09-30 17:18:22,321 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:18:22,357 INFO ===== PentaSync khởi động (backend http://127.0.0.1:55499) =====
+2026-09-30 17:18:22,453 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:18:22,453 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:18:23,537 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1e9c494a9b0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:18:23,537 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:18:23,566 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:18:23,566 INFO [qt]   using this adapter
+2026-09-30 17:18:23,568 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:18:23,568 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:18:23,916 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:18:23,922 INFO Backend sẵn sàng
+2026-09-30 17:18:23,952 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:18:26,035 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:19:00,741 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:19:00,742 INFO [qt]   using this adapter
+2026-09-30 17:19:00,742 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:19:00,743 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:19:18,563 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:19:18,577 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1e9c494a9b0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:19:26,129 INFO PentaSync đang tắt
+2026-09-30 17:19:28,174 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:19:28,214 INFO ===== PentaSync khởi động (backend http://127.0.0.1:55559) =====
+2026-09-30 17:19:28,295 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:19:28,296 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:19:29,550 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x25743e5df50)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:19:29,551 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:19:29,588 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:19:29,588 INFO [qt]   using this adapter
+2026-09-30 17:19:29,589 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:19:29,590 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:19:29,926 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:19:29,930 INFO Backend sẵn sàng
+2026-09-30 17:19:29,959 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:19:32,051 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:20:06,849 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:20:06,850 INFO [qt]   using this adapter
+2026-09-30 17:20:06,850 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:20:06,850 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:20:24,613 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:20:24,658 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x25743e5df50)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:20:32,243 INFO PentaSync đang tắt
+2026-09-30 17:20:50,246 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:20:50,275 INFO ===== PentaSync khởi động (backend http://127.0.0.1:55630) =====
+2026-09-30 17:20:50,343 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:20:50,343 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:20:52,313 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x26072933b80)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:20:52,314 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:20:52,314 WARNING Cảm ứng: 1/1 thiết bị cảm ứng chưa gắn với màn nào đang dùng — chạy Control Panel → Tablet PC Settings → Setup
+2026-09-30 17:20:52,336 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:20:52,336 INFO [qt]   using this adapter
+2026-09-30 17:20:52,336 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:20:52,336 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:20:52,832 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:20:52,835 INFO Backend sẵn sàng
+2026-09-30 17:20:52,884 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:20:54,808 INFO Màn 1 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:21:03,370 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:21:03,370 INFO [qt]   using this adapter
+2026-09-30 17:21:03,371 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:21:03,371 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:21:17,304 WARNING Màn 1 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:21:17,325 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x26072933b80)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:21:28,552 INFO PentaSync đang tắt
+2026-09-30 17:21:30,771 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:21:30,802 INFO ===== PentaSync khởi động (backend http://127.0.0.1:58797) =====
+2026-09-30 17:21:30,872 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:21:30,873 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:21:32,129 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\NUA0→màn 2 (cảm ứng) [1280x1440, ?], \\.\NUA1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-30 17:21:32,154 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:21:32,154 INFO [qt]   using this adapter
+2026-09-30 17:21:32,154 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:21:32,154 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:21:32,464 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:21:32,464 INFO [qt]   using this adapter
+2026-09-30 17:21:32,464 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:21:32,465 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:21:32,569 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:21:32,605 INFO Backend sẵn sàng
+2026-09-30 17:21:51,727 INFO PentaSync đang tắt
+2026-09-30 17:21:53,999 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:21:54,034 INFO ===== PentaSync khởi động (backend http://127.0.0.1:53471) =====
+2026-09-30 17:21:54,104 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:21:54,105 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:21:55,302 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\NUA0→màn 2 (cảm ứng) [1280x1440, ?], \\.\NUA1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-30 17:21:55,325 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:21:55,326 INFO [qt]   using this adapter
+2026-09-30 17:21:55,326 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:21:55,327 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:21:55,636 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:21:55,637 INFO [qt]   using this adapter
+2026-09-30 17:21:55,637 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:21:55,637 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:21:55,733 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:21:55,765 INFO Backend sẵn sàng
+2026-09-30 17:22:14,908 INFO PentaSync đang tắt
+2026-09-30 17:24:41,118 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:24:41,155 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-30 17:24:41,224 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:24:41,225 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:24:42,983 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x240b27f3c80)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:24:43,015 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x240b2964ed0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:24:43,043 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x240b2bac840)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:24:43,075 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x240b2b904b0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:24:43,106 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x240b5533db0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:24:43,169 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:24:43,169 INFO [qt]   using this adapter
+2026-09-30 17:24:43,169 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:24:43,169 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:24:43,540 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:24:43,542 INFO [qt]   using this adapter
+2026-09-30 17:24:43,542 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:24:43,543 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:24:43,645 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:24:43,645 INFO [qt]   using this adapter
+2026-09-30 17:24:43,645 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:24:43,646 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:24:43,747 INFO Bố cục: 6 màn | quản lý: \\.\ẢO1 | hiển thị: \\.\ẢO2→màn 1 [1920x1080, ?], \\.\ẢO3→màn 2 (cảm ứng) [1920x1080, ?], \\.\ẢO4→màn 3 [1920x1080, ?], \\.\ẢO5→màn 4 (cảm ứng) [1920x1080, ?], \\.\ẢO6→màn 5 [1920x1080, ?] | không dùng: không
+2026-09-30 17:24:43,757 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:24:43,757 INFO [qt]   using this adapter
+2026-09-30 17:24:43,758 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:24:43,758 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:24:43,861 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:24:43,897 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:24:43,898 INFO [qt]   using this adapter
+2026-09-30 17:24:43,898 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:24:43,899 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:24:44,006 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:24:44,006 INFO [qt]   using this adapter
+2026-09-30 17:24:44,006 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:24:44,007 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:24:44,470 INFO Backend sẵn sàng
+2026-09-30 17:25:13,519 WARNING Reset hệ thống từ màn quản lý
+2026-09-30 17:25:13,873 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x240a4536680)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:25:13,893 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2421a410230)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:25:13,913 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2421a409230)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:25:13,935 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x240a3c5ae30)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:25:13,956 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x241ab423ab0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:25:13,965 INFO Bố cục: 6 màn | quản lý: \\.\ẢO1 | hiển thị: \\.\ẢO2→màn 1 [1920x1080, ?], \\.\ẢO3→màn 2 (cảm ứng) [1920x1080, ?], \\.\ẢO4→màn 3 [1920x1080, ?], \\.\ẢO5→màn 4 (cảm ứng) [1920x1080, ?], \\.\ẢO6→màn 5 [1920x1080, ?] | không dùng: không
+2026-09-30 17:25:13,992 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:25:13,993 INFO [qt]   using this adapter
+2026-09-30 17:25:13,993 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:25:13,993 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:25:14,096 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:25:14,096 INFO [qt]   using this adapter
+2026-09-30 17:25:14,096 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:25:14,096 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:25:14,235 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:25:14,235 INFO [qt]   using this adapter
+2026-09-30 17:25:14,236 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:25:14,236 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:25:14,350 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:25:14,351 INFO [qt]   using this adapter
+2026-09-30 17:25:14,351 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:25:14,352 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:25:14,472 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:25:14,472 INFO [qt]   using this adapter
+2026-09-30 17:25:14,473 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:25:14,473 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:25:20,098 INFO PentaSync đang tắt
+2026-09-30 17:48:30,323 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:48:30,356 INFO ===== PentaSync khởi động (backend http://127.0.0.1:8000) =====
+2026-09-30 17:48:30,459 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:48:30,460 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:48:32,240 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f9a945c0e0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:48:32,283 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f9a95e2960)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:48:32,309 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f9a9745820)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:48:32,355 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f9a9835bd0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:48:32,379 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f9a98739e0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:48:32,487 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:48:32,487 INFO [qt]   using this adapter
+2026-09-30 17:48:32,487 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:48:32,488 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:48:33,044 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:48:33,045 INFO [qt]   using this adapter
+2026-09-30 17:48:33,045 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:48:33,045 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:48:33,141 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:48:33,141 INFO [qt]   using this adapter
+2026-09-30 17:48:33,142 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:48:33,142 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:48:33,236 INFO Bố cục: 6 màn | quản lý: \\.\ẢO1 | hiển thị: \\.\ẢO2→màn 1 [1920x1080, ?], \\.\ẢO3→màn 2 (cảm ứng) [1920x1080, ?], \\.\ẢO4→màn 3 [1920x1080, ?], \\.\ẢO5→màn 4 (cảm ứng) [1920x1080, ?], \\.\ẢO6→màn 5 [1920x1080, ?] | không dùng: không
+2026-09-30 17:48:33,248 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:48:33,248 INFO [qt]   using this adapter
+2026-09-30 17:48:33,249 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:48:33,250 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:48:33,377 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:48:33,415 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:48:33,415 INFO [qt]   using this adapter
+2026-09-30 17:48:33,415 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:48:33,415 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:48:33,518 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:48:33,518 INFO [qt]   using this adapter
+2026-09-30 17:48:33,518 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:48:33,519 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:48:33,940 INFO Backend sẵn sàng
+2026-09-30 17:49:02,975 WARNING Reset hệ thống từ màn quản lý
+2026-09-30 17:49:03,332 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1fb0dd2e8f0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:49:03,355 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1fb0702e280)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:49:03,377 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f984658ad0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:49:03,397 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f9852b0a30)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:49:03,417 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1f9a9743420)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:49:03,418 INFO Bố cục: 6 màn | quản lý: \\.\ẢO1 | hiển thị: \\.\ẢO2→màn 1 [1920x1080, ?], \\.\ẢO3→màn 2 (cảm ứng) [1920x1080, ?], \\.\ẢO4→màn 3 [1920x1080, ?], \\.\ẢO5→màn 4 (cảm ứng) [1920x1080, ?], \\.\ẢO6→màn 5 [1920x1080, ?] | không dùng: không
+2026-09-30 17:49:03,449 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:49:03,449 INFO [qt]   using this adapter
+2026-09-30 17:49:03,449 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:49:03,449 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:49:03,544 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:49:03,544 INFO [qt]   using this adapter
+2026-09-30 17:49:03,544 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:49:03,544 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:49:03,699 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:49:03,699 INFO [qt]   using this adapter
+2026-09-30 17:49:03,699 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:49:03,700 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:49:03,798 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:49:03,799 INFO [qt]   using this adapter
+2026-09-30 17:49:03,799 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:49:03,799 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:49:03,915 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:49:03,915 INFO [qt]   using this adapter
+2026-09-30 17:49:03,916 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:49:03,916 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:49:09,500 INFO PentaSync đang tắt
+2026-09-30 17:49:12,120 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:49:12,151 INFO ===== PentaSync khởi động (backend http://127.0.0.1:61043) =====
+2026-09-30 17:49:12,217 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:49:12,217 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:49:13,314 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1a8dc007aa0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:49:13,314 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 2 (cảm ứng) [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:49:13,345 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:49:13,345 INFO [qt]   using this adapter
+2026-09-30 17:49:13,346 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:49:13,346 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:49:13,694 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:49:13,696 INFO Backend sẵn sàng
+2026-09-30 17:49:13,729 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:49:15,820 INFO Màn 2 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:49:50,551 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:49:50,551 INFO [qt]   using this adapter
+2026-09-30 17:49:50,552 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:49:50,552 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:50:08,320 WARNING Màn 2 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:50:08,342 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x1a8dc007aa0)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:50:15,945 INFO PentaSync đang tắt
+2026-09-30 17:50:24,688 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:50:24,719 INFO ===== PentaSync khởi động (backend http://127.0.0.1:61113) =====
+2026-09-30 17:50:24,788 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:50:24,789 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:50:26,521 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2105776da70)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:50:26,523 INFO Bố cục: 1 màn | quản lý: không | hiển thị: \\.\DISPLAY1→màn 1 [2560x1440, AMD Radeon Graphics] | không dùng: không
+2026-09-30 17:50:26,523 WARNING Cảm ứng: 1/1 thiết bị cảm ứng chưa gắn với màn nào đang dùng — chạy Control Panel → Tablet PC Settings → Setup
+2026-09-30 17:50:26,560 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:50:26,561 INFO [qt]   using this adapter
+2026-09-30 17:50:26,561 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:50:26,561 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:50:26,904 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:50:26,906 INFO Backend sẵn sàng
+2026-09-30 17:50:26,939 WARNING [qt] Could not open media. FFmpeg error description: End of file
+2026-09-30 17:50:29,020 INFO Màn 1 khớp \\.\DISPLAY1: cửa sổ (0, 0, 2560, 1440) = màn (0, 0, 2560, 1440) (scale 150%)
+2026-09-30 17:50:37,626 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:50:37,626 INFO [qt]   using this adapter
+2026-09-30 17:50:37,626 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:50:37,627 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:50:51,520 WARNING Màn 1 bị thu nhỏ / thoát toàn màn hình — mở lại
+2026-09-30 17:50:51,532 WARNING [qt] requestActivate() called for  DisplayWindow_QMLTYPE_54(0x2105776da70)  which has Qt::WindowDoesNotAcceptFocus set.
+2026-09-30 17:51:02,698 INFO PentaSync đang tắt
+2026-09-30 17:51:04,504 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:51:04,536 INFO ===== PentaSync khởi động (backend http://127.0.0.1:61156) =====
+2026-09-30 17:51:04,609 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:51:04,609 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:51:05,686 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\NUA0→màn 2 (cảm ứng) [1280x1440, ?], \\.\NUA1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-30 17:51:05,714 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:51:05,716 INFO [qt]   using this adapter
+2026-09-30 17:51:05,716 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:51:05,716 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:51:06,015 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:51:06,029 INFO [qt]   using this adapter
+2026-09-30 17:51:06,029 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:51:06,029 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:51:06,119 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:51:06,150 INFO Backend sẵn sàng
+2026-09-30 17:51:25,313 INFO PentaSync đang tắt
+2026-09-30 17:51:27,646 INFO Lựa chọn card đồ hoạ có sẵn cho C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe: GpuPreference=2;
+2026-09-30 17:51:27,677 INFO ===== PentaSync khởi động (backend http://127.0.0.1:53098) =====
+2026-09-30 17:51:27,755 INFO Phím tắt: bảng điều khiển Ctrl+Shift+M · nhận diện màn Ctrl+Shift+I · thoát Ctrl+Shift+Q
+2026-09-30 17:51:27,755 INFO Khởi động backend: C:\Users\ADMIN\Desktop\python_code\python\outsource\system\.venv\Scripts\python.exe C:\Users\ADMIN\Desktop\python_code\python\outsource\system\desktop\run.py --backend
+2026-09-30 17:51:29,037 INFO Bố cục: 2 màn | quản lý: không | hiển thị: \\.\NUA0→màn 2 (cảm ứng) [1280x1440, ?], \\.\NUA1→màn 4 (cảm ứng) [1280x1440, ?] | không dùng: không
+2026-09-30 17:51:29,062 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:51:29,063 INFO [qt]   using this adapter
+2026-09-30 17:51:29,063 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:51:29,063 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:51:29,375 INFO [qt] Adapter 0: 'NVIDIA GeForce RTX 3050 Ti Laptop GPU' (vendor 0x10DE device 0x25E0 flags 0x0)
+2026-09-30 17:51:29,375 INFO [qt]   using this adapter
+2026-09-30 17:51:29,375 INFO [qt] Adapter 1: 'AMD Radeon(TM) Graphics' (vendor 0x1002 device 0x1681 flags 0x0)
+2026-09-30 17:51:29,376 INFO [qt] Adapter 2: 'Microsoft Basic Render Driver' (vendor 0x1414 device 0x8C flags 0x2)
+2026-09-30 17:51:29,475 INFO [qt] Using Qt multimedia with FFmpeg version 7.1.5 LGPL version 2.1 or later
+2026-09-30 17:51:29,505 INFO Backend sẵn sàng
+2026-09-30 17:51:48,606 INFO PentaSync đang tắt

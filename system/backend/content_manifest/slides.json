@@ -1,0 +1,89 @@
+{
+  "_comment": "Noi dung slide cho 3 man thu dong (1, 3, 5). Moi man 2 slide -> 6 nut trong bang dieu khien cua Man 2. Sua noi dung o day, khong phai sua code; backend validate lai luc khoi dong.",
+  "_vi_du_slide_anh": "Doi 1 slide bat ky thanh anh hoac video: bo file vao content_manifest/media/ roi thay noi dung slide bang { \"id\": \"noi_quy\", \"kind\": \"image\", \"title\": \"Noi quy benh vien\", \"src\": \"demo_anh.png\" }. Voi video thi dung \"kind\": \"video\". File demo_anh.png co san de thu ngay.",
+  "_hospital_name": "Ten benh vien hien o dau man menu, man cho chat va chan cac slide. Sua xong thi mo lai app.",
+  "hospital_name": "Bệnh viện Đa khoa",
+  "screens": {
+    "1": [
+      {
+        "id": "gioi_thieu",
+        "title": "Giới thiệu bệnh viện",
+        "subtitle": "Bệnh viện Đa khoa — Chăm sóc tận tâm",
+        "accent": "#1e5aa8",
+        "bullets": [
+          "Thành lập năm 1998, quy mô 750 giường bệnh",
+          "24 khoa lâm sàng, 9 khoa cận lâm sàng",
+          "Hơn 1.200 y bác sĩ và nhân viên y tế",
+          "Tiếp nhận trung bình 2.500 lượt khám mỗi ngày"
+        ]
+      },
+      {
+        "id": "gio_lam_viec",
+        "title": "Giờ làm việc",
+        "subtitle": "Lịch khám bệnh trong tuần",
+        "accent": "#12715c",
+        "bullets": [
+          "Thứ 2 - Thứ 6: 07:00 - 16:30",
+          "Thứ 7: 07:00 - 12:00",
+          "Chủ nhật: chỉ nhận cấp cứu",
+          "Cấp cứu: trực 24/7, tất cả các ngày trong năm"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "id": "noi_quy",
+        "title": "Nội quy bệnh viện",
+        "subtitle": "Đề nghị quý khách cùng thực hiện",
+        "accent": "#8a5a12",
+        "bullets": [
+          "Giữ trật tự, đi nhẹ, nói khẽ trong khu điều trị",
+          "Không hút thuốc trong toàn bộ khuôn viên bệnh viện",
+          "Mỗi bệnh nhân chỉ 01 người nhà ở lại chăm sóc",
+          "Giờ thăm bệnh: 11:00 - 12:30 và 17:00 - 19:00",
+          "Bỏ rác đúng nơi quy định, giữ vệ sinh chung"
+        ]
+      },
+      {
+        "id": "quy_trinh_kham",
+        "title": "Quy trình khám bệnh",
+        "subtitle": "5 bước từ lúc đến đến lúc nhận thuốc",
+        "accent": "#6b2fa0",
+        "bullets": [
+          "1. Lấy số thứ tự tại quầy tiếp đón — Tầng 1",
+          "2. Đăng ký khám, xuất trình thẻ BHYT (nếu có)",
+          "3. Khám tại phòng theo số được gọi",
+          "4. Làm xét nghiệm / chẩn đoán hình ảnh nếu bác sĩ chỉ định",
+          "5. Nhận kết quả, đóng viện phí và lãnh thuốc tại Tầng 1"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "id": "so_do_khuon_vien",
+        "title": "Sơ đồ khuôn viên",
+        "subtitle": "Hướng dẫn tìm khoa phòng",
+        "accent": "#0f6b8c",
+        "bullets": [
+          "Khu A — Tiếp đón, Cấp cứu, Nhà thuốc (Tầng 1)",
+          "Khu B — Khám ngoại trú, Xét nghiệm (Tầng 2 - 3)",
+          "Khu C — Nội trú, Phẫu thuật (Tầng 4 - 7)",
+          "Khu D — Chẩn đoán hình ảnh, X-quang, CT, MRI",
+          "Bãi giữ xe: cổng phụ đường Nguyễn Văn Cừ"
+        ]
+      },
+      {
+        "id": "lien_he",
+        "title": "Liên hệ & Hỗ trợ",
+        "subtitle": "Khi cần giúp đỡ, hãy gọi cho chúng tôi",
+        "accent": "#a02f4a",
+        "bullets": [
+          "Tổng đài: 1900 1234 (07:00 - 17:00)",
+          "Cấp cứu: 115 hoặc quầy Cấp cứu Khu A",
+          "Đặt lịch khám: 1900 1234 nhánh 2",
+          "Góp ý / khiếu nại: quầy Chăm sóc khách hàng, Tầng 1"
+        ]
+      }
+    ]
+  }
+}

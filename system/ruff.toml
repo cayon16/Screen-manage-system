@@ -1,0 +1,18 @@
+# Cấu hình dò lỗi tĩnh cho toàn dự án:  .venv\Scripts\python -m ruff check .
+# Mục đích: bắt import thừa, biến thừa, code chết, lỗi cú pháp, bẫy hay gặp — những thứ tích tụ
+# thành "mã rác". KHÔNG bật các luật thuần phong cách (sắp xếp import, đổi cú pháp theo bản Python
+# mới…) vì chúng tạo thay đổi ồn ào mà không bắt được lỗi nào.
+target-version = "py310"
+line-length = 115
+exclude = [".venv", "dist", "build", "test/anh"]
+
+[lint]
+select = ["F", "E4", "E7", "E9", "B", "SIM", "RUF"]
+ignore = [
+    "RUF001", "RUF002", "RUF003",  # chữ tiếng Việt và dấu × bị coi là "ký tự dễ nhầm"
+    "SIM117",  # test WebSocket cố ý lồng `with`: client ở ngoài, từng socket ở trong
+]
+
+[lint.per-file-ignores]
+# Script kiểm tra thủ công phải nạp đường dẫn dự án rồi mới import được desktop/app.
+"test/*.py" = ["E402"]

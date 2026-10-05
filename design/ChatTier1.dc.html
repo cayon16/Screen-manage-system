@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif; }
+    a { color: #1668A8; } a:hover { color: #0F4E7E; }
+  </style>
+</helmet>
+
+<div style="width: 1920px; height: 1080px; box-sizing: border-box; background: #FFFFFF; color: #101A22; position: relative; overflow: hidden;">
+
+  <div style="position: absolute; inset: 0; display: flex; flex-direction: column; filter: blur(3px); opacity: 0.4;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; border-bottom: 2px solid #E4E9ED;">
+      <div style="font-size: 38px; font-weight: 700;">Superdoc</div>
+      <div style="display: flex; gap: 18px;">
+        <div style="border: 3px solid #C3CDD6; border-radius: 16px; padding: 20px 34px; font-size: 29px; color: #2E3E4A;">Xem thông tin bệnh viện</div>
+        <div style="border: 3px solid #C3CDD6; border-radius: 16px; padding: 20px 34px; font-size: 29px; color: #2E3E4A;">Kết thúc</div>
+      </div>
+    </div>
+    <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 28px; padding: 40px 48px;">
+      <div style="display: flex; justify-content: flex-end;">
+        <div style="background: #EDF3F8; border-radius: 28px 28px 6px 28px; padding: 26px 38px; font-size: 38px;">Bệnh viện mấy giờ mở cửa?</div>
+      </div>
+      <div style="display: flex; justify-content: flex-start;">
+        <div style="max-width: 1240px; background: #F5F7F9; border-radius: 28px 28px 28px 6px; padding: 26px 38px; font-size: 38px;">Bệnh viện khám từ 07:00 đến 16:30 các ngày thứ 2 đến thứ 6, thứ 7 khám buổi sáng đến 12:00.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: absolute; inset: 0; background: rgba(16,26,34,0.34); display: flex; align-items: center; justify-content: center;">
+    <div style="width: 1080px; background: #FFFFFF; border: 3px solid #C3CDD6; border-radius: 34px; padding: 70px 76px 60px 76px; display: flex; flex-direction: column; align-items: center; gap: 36px; box-shadow: 0 30px 80px rgba(16,26,34,0.22);">
+
+      <div style="width: 124px; height: 124px; border-radius: 99px; background: #EDF3F8; display: flex; align-items: center; justify-content: center;">
+        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#1668A8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="8.5"></circle>
+          <path d="M12 7.2V12l3.2 2"></path>
+        </svg>
+      </div>
+
+      <div style="font-size: 62px; font-weight: 800; text-align: center; line-height: 1.22; letter-spacing: -0.015em; text-wrap: pretty;">Bạn còn muốn tiếp tục<br>trò chuyện không?</div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+        <div style="font-size: 32px; font-weight: 400; color: #5A6B78;">Đoạn chat sẽ tự kết thúc sau</div>
+        <div style="display: flex; align-items: baseline; gap: 12px;">
+          <span style="font-size: 88px; font-weight: 800; color: #1668A8; line-height: 1;">18</span>
+          <span style="font-size: 36px; font-weight: 500; color: #5A6B78;">giây</span>
+        </div>
+        <div style="width: 520px; height: 10px; border-radius: 99px; background: #E4E9ED; overflow: hidden;">
+          <div style="width: 60%; height: 100%; background: #1668A8; border-radius: 99px;"></div>
+        </div>
+      </div>
+
+      <div style="width: 100%; background: #1668A8; border-radius: 22px; padding: 34px; display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 6px;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+        <span style="font-size: 44px; font-weight: 700; color: #FFFFFF;">Tôi vẫn ở đây</span>
+      </div>
+
+      <div style="font-size: 28px; font-weight: 400; color: #8B97A2;">Chạm vào bất kỳ đâu cũng được tính là bạn còn ở đây</div>
+
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",         "x": 0,    "y": 0,    "w": 1920, "h": 1080, "title": "Màn 2 — Menu chính" },
+    { "file": "SlideControl.dc.html", "x": 2060, "y": 0,    "w": 1920, "h": 1080, "title": "Màn 2 — Bảng 6 nút chọn slide" },
+    { "file": "PromptChat.dc.html",   "x": 4120, "y": 0,    "w": 1920, "h": 1080, "title": "Màn 4 — Chạm để chat" },
+
+    { "file": "ChatEmpty.dc.html",    "x": 0,    "y": 1320, "w": 1920, "h": 1080, "title": "Chat — mới mở" },
+    { "file": "ChatKeyboard.dc.html", "x": 2060, "y": 1320, "w": 1920, "h": 1080, "title": "Chat — đang gõ, bàn phím mở" },
+    { "file": "ChatWaiting.dc.html",  "x": 4120, "y": 1320, "w": 1920, "h": 1080, "title": "Chat — đang chờ Superdoc" },
+
+    { "file": "ChatTier1.dc.html",    "x": 0,    "y": 2640, "w": 1920, "h": 1080, "title": "Chat — hỏi còn ở đó không" },
+    { "file": "ChatConfirm.dc.html",  "x": 2060, "y": 2640, "w": 1920, "h": 1080, "title": "Chat — xác nhận đổi chế độ" },
+    { "file": "Slide.dc.html",        "x": 4120, "y": 2640, "w": 1920, "h": 1080, "title": "Màn 1/3/5 — Slide thông tin" },
+
+    { "file": "Management.dc.html",   "x": 0,    "y": 3960, "w": 1920, "h": 1080, "title": "Màn quản lý" },
+    { "file": "Identify.dc.html",     "x": 2060, "y": 3960, "w": 1920, "h": 1080, "title": "Lớp nhận diện màn" }
+  ],
+  "annotations": [
+    { "id": "note-flow", "x": 0, "y": -190, "w": 1000, "text": "MÀN CẢM ỨNG — luồng người dùng chạm vào\nMàn 2 có menu 2 lựa chọn; màn 4 vào thẳng chat." },
+    { "id": "note-chat", "x": 0, "y": 1130, "w": 1000, "text": "KHUNG CHAT — 3 trạng thái chính\nBàn phím trượt lên khi chạm ô nhập, ẩn khi chạm ra ngoài (giống điện thoại)." },
+    { "id": "note-dialog", "x": 0, "y": 2450, "w": 1000, "text": "HỘP THOẠI + SLIDE\nHai hộp thoại tự động; slide là thứ hiện trên màn 1/3/5." },
+    { "id": "note-ops", "x": 0, "y": 3770, "w": 1300, "text": "DÀNH CHO NGƯỜI VẬN HÀNH\nMàn quản lý chỉ hiện khi có màn thứ 6. Lớp nhận diện màn dùng để kiểm tra căn chỉnh tại chỗ." }
+  ],
+  "launch": { "view": "canvas" }
+}

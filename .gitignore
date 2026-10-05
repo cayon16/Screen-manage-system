@@ -1,0 +1,19 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables
+.env
+# Ignore large media and builds
+system/dist/
+system/backend/_cache/
+*.mp4
+*.exe
+*.zip

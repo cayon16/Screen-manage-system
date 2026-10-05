@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif; }
+    a { color: #1668A8; } a:hover { color: #0F4E7E; }
+    .key { background: #FFFFFF; border: 2px solid #C3CDD6; border-radius: 14px; height: 94px;
+           display: flex; align-items: center; justify-content: center; font-size: 40px;
+           font-weight: 600; color: #101A22; flex-grow: 1; flex-basis: 0; }
+    .key-util { background: #EEF1F4; font-size: 28px; font-weight: 600; color: #2E3E4A; flex-grow: 1.6; }
+  </style>
+</helmet>
+
+<div style="width: 1920px; height: 1080px; box-sizing: border-box; background: #FFFFFF; color: #101A22; display: flex; flex-direction: column; overflow: hidden;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; border-bottom: 2px solid #E4E9ED;">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <div style="width: 56px; height: 56px; border-radius: 16px; background: #EDF3F8; display: flex; align-items: center; justify-content: center;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1668A8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.5 12.5c0 3.9-3.8 7-8.5 7-1 0-2-.15-2.9-.42L4 20.5l1.5-3.6C4.2 15.7 3.5 14.2 3.5 12.5c0-3.9 3.8-7 8.5-7s8.5 3.1 8.5 7Z"></path>
+        </svg>
+      </div>
+      <div style="font-size: 33px; font-weight: 700;">Superdoc</div>
+    </div>
+    <div style="display: flex; gap: 14px;">
+      <div style="border: 2px solid #C3CDD6; border-radius: 14px; padding: 14px 28px; font-size: 26px; font-weight: 600; color: #2E3E4A;">Xem thông tin bệnh viện</div>
+      <div style="border: 2px solid #C3CDD6; border-radius: 14px; padding: 14px 28px; font-size: 26px; font-weight: 600; color: #2E3E4A;">Kết thúc</div>
+    </div>
+  </div>
+
+  <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 24px; padding: 30px 48px; overflow: hidden;">
+
+    <div style="display: flex; justify-content: flex-end;">
+      <div style="max-width: 1100px; background: #EDF3F8; border: 2px solid #BBD3E6; border-radius: 26px 26px 6px 26px; padding: 24px 34px; font-size: 36px; font-weight: 500; line-height: 1.4;">Bệnh viện mấy giờ mở cửa?</div>
+    </div>
+
+    <div style="display: flex; justify-content: flex-start;">
+      <div style="max-width: 1240px; background: #F5F7F9; border: 2px solid #DCE3E9; border-radius: 26px 26px 26px 6px; padding: 24px 34px; font-size: 36px; font-weight: 400; line-height: 1.5; text-wrap: pretty;">Bệnh viện khám từ 07:00 đến 16:30 các ngày thứ 2 đến thứ 6, thứ 7 khám buổi sáng đến 12:00. Khoa Cấp cứu trực 24/7 kể cả chủ nhật và ngày lễ.</div>
+    </div>
+
+  </div>
+
+  <div style="border-top: 2px solid #E4E9ED; background: #F5F7F9; padding: 20px 40px 26px 40px; display: flex; flex-direction: column; gap: 16px;">
+
+    <div style="display: flex; align-items: center; gap: 18px;">
+      <div style="flex-grow: 1; background: #FFFFFF; border: 4px solid #1668A8; border-radius: 20px; padding: 22px 30px; font-size: 36px; font-weight: 400; display: flex; align-items: center;">
+        <span>Khoa cấp cứu ở đâu</span><span style="display: inline-block; width: 3px; height: 40px; background: #1668A8; margin-left: 4px;"></span>
+      </div>
+      <div style="width: 146px; height: 86px; border-radius: 20px; background: #1668A8; display: flex; align-items: center; justify-content: center;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12h15M13 5.5 19.5 12 13 18.5"></path></svg>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <div style="font-size: 23px; font-weight: 400; color: #7A8894;">Gõ tiếng Việt kiểu Telex — aa → â, dd → đ, s f r x j → dấu</div>
+      <div style="display: flex; align-items: center; gap: 8px; color: #7A8894;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.5 12 15.5 18 9.5"></path></svg>
+        <span style="font-size: 23px; font-weight: 500;">Chạm ra ngoài để ẩn bàn phím</span>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="display: flex; gap: 12px;">
+        <div class="key">q</div><div class="key">w</div><div class="key">e</div><div class="key">r</div><div class="key">t</div>
+        <div class="key">y</div><div class="key">u</div><div class="key">i</div><div class="key">o</div><div class="key">p</div>
+      </div>
+      <div style="display: flex; gap: 12px; padding: 0 52px;">
+        <div class="key">a</div><div class="key">s</div><div class="key">d</div><div class="key">f</div><div class="key">g</div>
+        <div class="key">h</div><div class="key">j</div><div class="key">k</div><div class="key">l</div>
+      </div>
+      <div style="display: flex; gap: 12px;">
+        <div class="key key-util">Hoa</div>
+        <div class="key">z</div><div class="key">x</div><div class="key">c</div><div class="key">v</div>
+        <div class="key">b</div><div class="key">n</div><div class="key">m</div>
+        <div class="key key-util">Xoá</div>
+      </div>
+      <div style="display: flex; gap: 12px;">
+        <div class="key key-util">123</div>
+        <div class="key" style="flex-grow: 6; font-size: 28px; font-weight: 500; color: #5A6B78;">dấu cách</div>
+        <div class="key">.</div>
+        <div class="key key-util">Ẩn</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

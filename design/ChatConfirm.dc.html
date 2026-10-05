@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif; }
+    a { color: #1668A8; } a:hover { color: #0F4E7E; }
+  </style>
+</helmet>
+
+<div style="width: 1920px; height: 1080px; box-sizing: border-box; background: #FFFFFF; color: #101A22; position: relative; overflow: hidden;">
+
+  <div style="position: absolute; inset: 0; display: flex; flex-direction: column; filter: blur(3px); opacity: 0.4;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; border-bottom: 2px solid #E4E9ED;">
+      <div style="font-size: 38px; font-weight: 700;">Superdoc</div>
+      <div style="display: flex; gap: 18px;">
+        <div style="border: 3px solid #C3CDD6; border-radius: 16px; padding: 20px 34px; font-size: 29px; color: #2E3E4A;">Xem thông tin bệnh viện</div>
+        <div style="border: 3px solid #C3CDD6; border-radius: 16px; padding: 20px 34px; font-size: 29px; color: #2E3E4A;">Kết thúc</div>
+      </div>
+    </div>
+    <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 28px; padding: 40px 48px;">
+      <div style="display: flex; justify-content: flex-end;">
+        <div style="background: #EDF3F8; border-radius: 28px 28px 6px 28px; padding: 26px 38px; font-size: 38px;">Thủ tục dùng bảo hiểm y tế?</div>
+      </div>
+      <div style="display: flex; justify-content: flex-start;">
+        <div style="max-width: 1240px; background: #F5F7F9; border-radius: 28px 28px 28px 6px; padding: 26px 38px; font-size: 38px;">Bạn mang thẻ BHYT còn hạn cùng giấy tờ tùy thân tới quầy tiếp đón Tầng 1 để đăng ký.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: absolute; inset: 0; background: rgba(16,26,34,0.34); display: flex; align-items: center; justify-content: center;">
+    <div style="width: 1160px; background: #FFFFFF; border: 3px solid #C3CDD6; border-radius: 34px; padding: 68px 76px 60px 76px; display: flex; flex-direction: column; gap: 38px; box-shadow: 0 30px 80px rgba(16,26,34,0.22);">
+
+      <div style="display: flex; align-items: flex-start; gap: 30px;">
+        <div style="width: 104px; height: 104px; flex-shrink: 0; border-radius: 26px; background: #F1F3F5; border: 2px solid #DCE3E9; display: flex; align-items: center; justify-content: center;">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#2E3E4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 4.2 2.8 19.5h18.4L12 4.2Z"></path>
+            <path d="M12 10v4.2M12 16.8v.2"></path>
+          </svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-size: 56px; font-weight: 800; line-height: 1.2; letter-spacing: -0.015em; text-wrap: pretty;">Kết thúc đoạn chat để xem thông tin bệnh viện?</div>
+          <div style="font-size: 34px; font-weight: 400; color: #5A6B78; line-height: 1.5; text-wrap: pretty;">Toàn bộ đoạn trò chuyện hiện tại sẽ bị xoá và không xem lại được trên màn hình này.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 26px;">
+        <div style="flex-grow: 1; flex-basis: 0; background: #1668A8; border-radius: 22px; padding: 36px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+          <span style="font-size: 40px; font-weight: 700; color: #FFFFFF;">Đồng ý, kết thúc</span>
+        </div>
+        <div style="flex-grow: 1; flex-basis: 0; background: #FFFFFF; border: 3px solid #C3CDD6; border-radius: 22px; padding: 36px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#2E3E4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5 9 12l5.5 5.5"></path></svg>
+          <span style="font-size: 40px; font-weight: 700; color: #2E3E4A;">Huỷ, tiếp tục chat</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
