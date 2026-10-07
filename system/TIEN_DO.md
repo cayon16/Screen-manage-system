@@ -185,6 +185,45 @@ hiển thị trọn vẹn, chạy đúng với màn cảm ứng. Việc:
 - [x] `README.md` rút thành bản tóm tắt (chi tiết trỏ sang `descryption.md`); cập nhật
   `HUONG_DAN_TEST.md`, `docs/architecture.md` theo cấu trúc mới
 
+### Giai đoạn 9 — Video chờ bị méo trên 5 màn (khách hỏi 2026-10-06) — ĐANG CHỜ KHÁCH CHỌN
+Đã phân tích, CHƯA sửa code. Gốc vấn đề: 5 màn 16:9 ghép ngang = 80:9 (9600×1080), video thường 16:9 →
+chênh 5 lần. `video/standby_wall.mp4` hiện còn bị ép dẹt từ 4K 16:9 xuống 3840×1080 → cá rộng gấp 5 lần.
+Khách xác nhận: 5 màn treo SÁT NHAU thành 1 tường.
+Số đo video gốc 4K (`video/12 Hours…Betta…mp4`): nền đen tuyền (YLOW 15); cá chiếm 10–20% khung, đi khắp
+khung; bơi chậm (trung vị 40 px/s ở 1080p); chạm mép khung gốc 21% thời gian; chỉ 37% thời gian tâm cá ở
+dải giữa 20% → "cắt lấp kín" luôn cắt cá. Video là tổng hợp NHIỀU con cá khác nhau (có cắt cảnh).
+Ảnh so sánh dựng từ khung thật: `test/anh/video_cho/so_sanh_5_cach.png` (script ở scratchpad phiên này:
+`dung_anh_so_sanh.py`).
+Đề xuất: (1) nền móng code — không bao giờ kéo giãn, tỉ lệ từng màn gửi kèm bố cục, tự chọn trải/trôi;
+(2) "bể trôi" làm mặc định (mọi video, mọi số màn); (3) "ghép bể siêu rộng" 80:9 từ chính video 4K bằng
+ffmpeg cho tường 5 màn; (4) bù viền màn sau khi đo viền thật. Đã loại: kéo giãn, cắt lấp kín, gương lặp,
+lệch thời gian (đặc tả cấm), AI mở rộng khung (công cụ 2026 tối đa ~21:9), xoay dọc màn.
+
+### Giai đoạn 10 — Quản lý kết nối AI (khách duyệt kế hoạch 2026-10-06) — XONG
+Kế hoạch đầy đủ: `docs/ke_hoach_ai.md` (đọc trước khi làm tiếp). 3 chế độ `demo` / `internal` / `public`
+(Gemini, GPT, Claude), API `/api/ai/*` chỉ gọi từ máy chạy app, key CHỈ ở biến môi trường, chuẩn
+"Superdoc Bridge v1" cho chatbot nội bộ. Làm theo 10 bước ở mục 9 của kế hoạch:
+- [x] 1 `base.py` (ChatContext, SuperdocError.code, normalize_history) + sửa mock/gemini/FakeProvider
+- [x] 2 `settings.py` + `config.py`
+- [x] 3 provider unavailable / openai / anthropic / bridge + máy chủ mẫu `bridge_reference.py`
+- [x] 4 `registry.py` (thay `factory.py`)
+- [x] 5 `manager.py` (AiManager)
+- [x] 6 nối chat_session / cluster_controller / commands / schemas / main
+- [x] 7 `routes/ai_routes.py`
+- [x] 8 ô "AI đang dùng" trên bảng điều khiển
+- [x] 9 tài liệu + `.gitignore`
+- [x] 10 chạy thật + đóng gói
+
+Kết quả giai đoạn 10: 301 test backend (tăng từ 176) + 151 desktop xanh, ruff + qmllint sạch. Chạy thật: backend
+thật + máy chủ bridge mẫu + 1 màn 4 giả lập qua WebSocket 20/20 (đổi AI giữa lúc chat: chat cũ giữ AI cũ, bridge nhận
+đúng `POST /v1/sessions/<mã>/end`, chat mới dùng AI mới); các lệnh PowerShell trong `docs/ai_api.md` chạy đúng như mô
+tả (kể cả 424 khi bridge tắt, `?test=false` ép đổi); gia_lap_nhieu_man 15/15, motman 23/23, chuagan 9/9, haiman 10/10;
+exe build lại 9/9 và API chạy trong exe (`data\ai_settings.json` tạo ra, không chứa khóa).
+Chưa thử được: gọi THẬT tới Gemini / OpenAI / Claude (cần khóa API, mới kiểm bằng `httpx.MockTransport`) và chatbot
+nội bộ thật của công ty (chưa có; mới thử với máy chủ mẫu `bridge_reference.py`).
+Lưu ý: 1 lần `haiman` chạy ngay sau `chuagan` ra 1/15, chạy lại 4 lần liên tiếp đều 10/10 — chưa tìm ra nguyên nhân
+(nghi nhiễu lúc khởi động liên tiếp như đã gặp trước đây), cần để ý nếu tái diễn.
+
 Sau giai đoạn 8:
 1. Khách mang `system/dist/PentaSync` đi test ở công ty theo `HUONG_DAN_TEST.md` → chờ kết quả, sửa theo báo cáo.
 2. Build lại bằng `packaging/build.py` sau mỗi lần sửa code (để `dist/` mang tài liệu mới nhất).
@@ -234,6 +273,9 @@ Bài học khi chạy thật:
   (1 HDMI + 3 DP) + 1 HDMI mainboard. Hoãn giai đoạn 4 (giữ bản Edge dự phòng).
 - 2026-09-17: thêm tên card từng màn + tự chọn card rời; giai đoạn 5 (exe) và 6 (tài liệu) xong.
   178 test backend + 130 test app xanh. Chờ khách test trên máy thật.
+- 2026-10-06: giai đoạn 10 xong — API quản lý AI (`/api/ai/*`), 3 chế độ demo/nội bộ/công khai (Gemini, GPT, Claude),
+  chuẩn Superdoc Bridge v1 + máy chủ mẫu, `AiManager` (đổi AI giữa chừng, thử kết nối, theo dõi tình trạng), ô "Trợ lý
+  AI" trên bảng điều khiển. Cấu hình AI sai không còn lùi về mock. Tài liệu: `docs/ai_api.md`, `docs/superdoc_bridge_api.md`.
 - 2026-09-30: giai đoạn 4 + 8 xong — code cũ sang `old_system/`, xoá 196 MB profile Edge còn sót,
   ruff/qmllint sạch, bài kiểm tra tay dọn vào `system/test/`, viết `descryption.md` (giải thích từng
   file + hướng dẫn test), README thành bản tóm tắt.

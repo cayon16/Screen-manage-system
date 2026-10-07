@@ -135,6 +135,11 @@ class SlicesReadyCommand:
     wall_count: int
 
 
+@dataclass
+class AiChangedCommand:
+    """Cau hinh hoac tinh trang ket noi AI vua doi — bang dieu khien can ve lai."""
+
+
 Command = Union[
     TouchCommand,
     ChatMessageCommand,
@@ -153,4 +158,5 @@ Command = Union[
     AdminCommand,
     AdminConnectedCommand,
     SlicesReadyCommand,
+    AiChangedCommand,
 ]

@@ -3,7 +3,7 @@ from __future__ import annotations
 import asyncio
 from typing import Sequence
 
-from app.superdoc.base import SuperdocError, Turn
+from app.superdoc.base import ChatContext, SuperdocError, Turn
 
 # Provider mac dinh: khong goi mang, khong can API key. Muc dich la de chay va test toan bo
 # luong chat (go tin -> hien "dang tra loi" -> nhan cau tra loi -> reset Tier-1 timer) ma khong
@@ -78,13 +78,14 @@ class MockSuperdocProvider:
     """Provider gia lap — tra loi theo tu khoa, tre nhan tao 0.4s cho giong goi mang that."""
 
     name = "mock"
+    model = None
 
     def __init__(self, latency_sec: float = 0.4):
         self._latency_sec = latency_sec
 
-    async def reply(self, history: Sequence[Turn]) -> str:
+    async def reply(self, history: Sequence[Turn], context: ChatContext) -> str:
         if not history:
-            raise SuperdocError("history rong — khong co gi de tra loi")
+            raise SuperdocError("history rong — khong co gi de tra loi", code="bad_response")
 
         await asyncio.sleep(self._latency_sec)
 
@@ -101,7 +102,7 @@ class MockSuperdocProvider:
                 return answer
         return _DEFAULT_ANSWER
 
-    async def end_session(self, session_id: str) -> None:
+    async def end_session(self, context: ChatContext, reason: str) -> None:
         # Provider nay khong giu trang thai gi phia server -> khong co gi de dong.
         return None
 

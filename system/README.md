@@ -10,6 +10,8 @@ File này là **bản tóm tắt**. Chi tiết nằm ở các file dưới đây
 |---|---|
 | **`descryption.md`** | **Giải thích từng file + cách test lại toàn bộ + cấu hình chi tiết** |
 | **`HUONG_DAN_TEST.md`** | **Chuẩn bị máy và test trên màn thật — cầm theo file này** |
+| `docs/ai_api.md` | **Đổi AI (nội bộ / Gemini / GPT / Claude) bằng API**, mã lỗi, thêm nhà cung cấp |
+| `docs/superdoc_bridge_api.md` | Chuẩn kết nối chatbot nội bộ — gửi cho IT công ty |
 | `docs/architecture.md` | Viết code mới: kiến trúc, state machine, timer, các bẫy đã gỡ |
 | `TIEN_DO.md` | Nhật ký triển khai, quyết định đã chốt, số đo |
 | `test/README.md` | Danh sách script kiểm tra thủ công |
@@ -68,7 +70,7 @@ thoát (kể cả bị tắt ngang từ Task Manager).
 | Nội dung slide, tên bệnh viện | `content_manifest\slides.json` → mở lại app |
 | Video chờ | chép đè `video\standby_wall.mp4` |
 | Thời gian chờ | biến môi trường `PENTASYNC_TIER1_WARNING_SEC`, `PENTASYNC_TIER1_CLEANUP_SEC`, `PENTASYNC_TIER2_CLUSTER_IDLE_SEC` |
-| Chat AI thật | `set SUPERDOC_PROVIDER=gemini` + `set GEMINI_API_KEY=…` (**không ghi khoá vào file trong dự án**) |
+| Chat AI (demo / chatbot nội bộ / Gemini · GPT · Claude) | **API `/api/ai/*`, đổi lúc đang chạy** — xem `docs/ai_api.md`. Khoá API chỉ đặt bằng biến môi trường (**không ghi vào file trong dự án**) |
 
 Đầy đủ (định dạng slides.json, lệnh nén video, đổi nhà cung cấp AI, card đồ hoạ): `descryption.md`
 mục 11.
@@ -94,7 +96,7 @@ mục** sang máy khác là chạy.
 ## Test
 
 ```bat
-cd backend && ..\.venv\Scripts\python -m pytest -q          :: 176 passed
+cd backend && ..\.venv\Scripts\python -m pytest -q          :: 301 passed
 cd ..     && .venv\Scripts\python -m pytest desktop\tests -q :: 151 passed
              .venv\Scripts\python -m ruff check .            :: All checks passed!
 ```

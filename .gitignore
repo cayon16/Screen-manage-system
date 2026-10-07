@@ -1,19 +1,36 @@
-# Virtual Environments
+# Môi trường Python
 .venv/
 venv/
 env/
 ENV/
 
-# Python Cache
+# Cache Python
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
+.ruff_cache/
 
-# Environment Variables
+# Biến môi trường (CHỨA API KEY — không bao giờ commit)
 .env
-# Ignore large media and builds
-system/dist/
-system/backend/_cache/
+
+# File nặng: video chờ, bản đóng gói, file nén
 *.mp4
 *.exe
 *.zip
+system/dist/
+system/build/
+
+# Máy tự sinh: lát video đã cắt, database, log, ảnh chụp khi chạy test, cấu hình AI theo máy
+ai_settings.json
+system/backend/_cache/
+*.db
+*log.txt
+system/test/anh/
+
+# Rác của bản prototype cũ (profile trình duyệt Edge)
+*_edge_profile_screen_*/
+
+# Bản sao thủ công
+*- Copy/
+*- Copy.zip

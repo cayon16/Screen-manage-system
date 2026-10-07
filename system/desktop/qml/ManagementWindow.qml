@@ -21,6 +21,8 @@ Window {
     readonly property var screens: snap.screens || []
     readonly property var slides: snap.slides || []
     readonly property var stats: snap.stats || ({})
+    readonly property var ai: snap.ai || ({})
+    readonly property bool aiDown: ai.state === "down"
     readonly property bool blackout: !!snap.blackout
     property real now: Date.now() / 1000
     // Hộp xác nhận đang mở: "" | "reset" | "quit"
@@ -60,6 +62,21 @@ Window {
         if (m > 0)
             return m + " phút " + (s < 10 ? "0" : "") + s + " giây"
         return s + " giây"
+    }
+    // AI đang dùng, vd "Công khai · gemini-2.5-flash". Đổi AI bằng API (docs/ai_api.md), bảng này chỉ hiển thị.
+    function aiTitle() {
+        if (!ai.mode)
+            return "—"
+        if (ai.mode === "demo")
+            return "Demo (không dùng AI thật)"
+        return (ai.mode === "internal" ? "Nội bộ" : "Công khai") + " · " + (ai.model || ai.provider || "")
+    }
+    function aiStatusText() {
+        const states = { unknown: "Chưa có lượt hỏi nào", ok: "Kết nối tốt", degraded: "Đang gặp lỗi", down: "Mất kết nối" }
+        let text = states[ai.state] || "—"
+        if (ai.last_error_code && (ai.state === "degraded" || ai.state === "down"))
+            text += " (" + ai.last_error_code + ")"
+        return text
     }
     function shortDuration(seconds) {
         if (seconds === null || seconds === undefined)
@@ -525,6 +542,29 @@ Window {
                                         font.weight: Font.Bold
                                     }
                                 }
+                            }
+                            SectionTitle {
+                                Layout.topMargin: 8
+                                text: "Trợ lý AI"
+                            }
+                            Text {
+                                Layout.fillWidth: true
+                                text: win.aiTitle()
+                                textFormat: Text.PlainText
+                                wrapMode: Text.Wrap
+                                color: win.aiDown ? Theme.danger : Theme.ink
+                                font.family: Theme.font
+                                font.pixelSize: 19
+                                font.weight: Font.Bold
+                            }
+                            Text {
+                                Layout.fillWidth: true
+                                text: win.aiStatusText()
+                                textFormat: Text.PlainText
+                                wrapMode: Text.Wrap
+                                color: win.aiDown ? Theme.danger : Theme.muted
+                                font.family: Theme.font
+                                font.pixelSize: 17
                             }
                         }
                     }

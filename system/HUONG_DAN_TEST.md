@@ -13,7 +13,7 @@ tổng 5 màn hiển thị. Toàn bộ buổi test mất khoảng **60–75 phú
 
 ```bat
 cd system\backend
-..\.venv\Scripts\python -m pytest -q        :: kỳ vọng 176 passed
+..\.venv\Scripts\python -m pytest -q        :: kỳ vọng 301 passed
 cd ..
 .venv\Scripts\python -m pytest desktop\tests -q   :: kỳ vọng 151 passed
 .venv\Scripts\python -m ruff check .              :: kỳ vọng All checks passed!
@@ -352,21 +352,43 @@ Mỗi màn hiện số vai trò thật to, kèm độ phân giải, tỉ lệ, c
 
 ---
 
-## Chat AI thật (Gemini) — tuỳ chọn, cần mạng
+## Chat AI: nội bộ / công khai — tuỳ chọn
 
-Mở **cmd** trong thư mục `PentaSync\` rồi gõ:
+Mặc định app chạy AI giả (`demo`) nên test được trọn luồng không cần mạng. Muốn thử AI thật thì đổi **bằng API,
+không cần khởi động lại app** — đầy đủ lệnh và bảng mã lỗi ở `docs\ai_api.md`.
 
-```bat
-set SUPERDOC_PROVIDER=gemini
-set GEMINI_API_KEY=<khoá của bạn>
-PentaSync.exe
-```
+1. Đặt khóa (một lần), rồi **tắt và mở lại app** (khóa chỉ có hiệu lực với chương trình mở sau đó):
+   ```bat
+   setx GEMINI_API_KEY "<khoá của bạn>"
+   ```
+   Đừng ghi khoá vào file nào trong thư mục app.
+2. Mở **PowerShell**:
+   ```powershell
+   $api = "http://127.0.0.1:8000"          # nếu 8000 bị chiếm, xem cổng thật trong pentasync_app_log.txt
+   irm $api/api/ai | ConvertTo-Json -Depth 6                  # AI đang dùng + khóa nào đã có (true/false)
+   $body = '{"mode":"public","public":{"provider":"gemini"}}'
+   irm -Method Put $api/api/ai/settings -ContentType 'application/json' -Body $body
+   ```
+3. Kiểm tra:
+   - [ ] `irm ... -Method Put` trả `applied: True` và `test.ok: True` (app tự thử 1 câu trước khi đổi).
+   - [ ] Bảng điều khiển (`Ctrl+Shift+M`) mục **Trợ lý AI** hiện "Công khai · gemini-…".
+   - [ ] Chat ở màn 2/4 trả lời bằng AI thật.
+   - [ ] Đổi AI **giữa lúc đang chat**: chat đang mở vẫn dùng AI cũ tới khi kết thúc, chat mới dùng AI mới.
+   - [ ] Rút mạng rồi hỏi: màn báo "chưa kết nối được tới Superdoc", bảng điều khiển hiện "Đang gặp lỗi (network)".
+   - [ ] Cố ý đổi sang provider thiếu khóa (vd `openai` khi chưa đặt `OPENAI_API_KEY`) → API trả 400 chỉ rõ thiếu
+     `secrets.OPENAI_API_KEY`, AI đang dùng **không bị đổi**.
+   - [ ] `irm -Method Post $api/api/ai/mode -ContentType 'application/json' -Body '{"mode":"demo"}'` quay lại AI giả.
 
-Đừng ghi khoá vào file nào trong thư mục app. Thiếu khoá hoặc mất mạng thì app tự lùi về AI giả.
+Chatbot nội bộ: xem `docs\superdoc_bridge_api.md` (chuẩn để IT công ty dựng) — máy dev có sẵn máy chủ mẫu
+(`python -m app.superdoc.bridge_reference --port 9000` trong thư mục `backend`) để thử cả luồng.
+
+Cấu hình sai (thiếu khóa/model…) thì app **không** lùi về AI giả: màn hình báo "chưa kết nối được" và lý do nằm
+ở `irm $api/api/ai` → `problems`.
 
 ## Những gì CHƯA có, đừng test
 
-- **Chatbot Superdoc thật** — chưa có tài liệu API (đang dùng AI giả hoặc Gemini).
+- **Chatbot Superdoc thật của công ty** — chưa có tài liệu API. Đã có chuẩn kết nối "Superdoc Bridge v1" để IT
+  công ty dựng (`docs\superdoc_bridge_api.md`) và đã thử với máy chủ mẫu, chưa thử với bot thật.
 - **Nội dung slide thật** — 6 slide hiện tại là mẫu. Tên bệnh viện sửa ở `content_manifest\slides.json`
   (`"hospital_name"`), mở lại app để áp dụng.
 - **Cá không bị giãn ngang** — cần video siêu rộng (~8,9:1), không phải sửa code.

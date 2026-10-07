@@ -15,6 +15,7 @@ from app.commands import (
 from app.state.cluster_controller import ClusterController
 from app.state.layout import ClusterLayout, LayoutError
 from app.state.screen_fsm import ScreenState
+from app.superdoc.manager import AiManager
 
 from tests.conftest import FakeProvider
 from tests.test_chat_flow import _drain
@@ -293,7 +294,7 @@ async def test_snapshot_shows_open_chat_and_inactive_screens(controller, admin):
 
 
 async def test_stats_count_todays_chats_and_ai_errors(controller, admin, store):
-    controller._provider = FakeProvider(fail=True)
+    controller._ai = AiManager.fixed(FakeProvider(fail=True))
     await controller._handle(_touch(4, "chat_button"))
     session_id = controller.session_of(4).session_id
     await controller._handle(ChatMessageCommand(screen_id=4, session_id=session_id, text="Chào"))

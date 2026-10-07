@@ -2,7 +2,7 @@ import pytest
 
 from app.db import ChatStore
 from app.state.cluster_controller import ClusterController
-from app.superdoc.base import SuperdocError, Turn
+from app.superdoc.base import ChatContext, SuperdocError, Turn
 
 
 class RecordingSender:
@@ -32,16 +32,20 @@ class FakeProvider:
         self.answer = answer
         self.fail = fail
         self.calls: list[list[Turn]] = []
+        self.contexts: list[ChatContext] = []
         self.ended_sessions: list[str] = []
+        self.end_reasons: list[str] = []
 
-    async def reply(self, history):
+    async def reply(self, history, context=None):
         self.calls.append(list(history))
+        self.contexts.append(context)
         if self.fail:
             raise SuperdocError("loi gia lap")
         return self.answer
 
-    async def end_session(self, session_id):
-        self.ended_sessions.append(session_id)
+    async def end_session(self, context, reason=""):
+        self.ended_sessions.append(context.session_id)
+        self.end_reasons.append(reason)
 
     async def aclose(self):
         return None

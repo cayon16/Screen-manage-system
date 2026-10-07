@@ -9,6 +9,7 @@ from typing import TYPE_CHECKING, Awaitable, Callable
 from app.commands import (
     AdminCommand,
     AdminConnectedCommand,
+    AiChangedCommand,
     AiReplyFailedCommand,
     AiReplyReadyCommand,
     ChatMessageCommand,
@@ -61,7 +62,8 @@ from app.state.screen_fsm import (
 from app.state.slide_band import SlideBand
 from app.state.timers import ResettableTimer
 from app.superdoc.base import SuperdocProvider
-from app.superdoc.factory import build_provider
+from app.superdoc.manager import AiManager
+from app.superdoc.mock_provider import MockSuperdocProvider
 
 if TYPE_CHECKING:
     from app.state.video_slicer import VideoSlicer
@@ -120,6 +122,7 @@ class ClusterController:
         self,
         send: SendFn,
         *,
+        ai: AiManager | None = None,
         provider: SuperdocProvider | None = None,
         store: ChatStore | None = None,
         slide_band: SlideBand | None = None,
@@ -129,7 +132,12 @@ class ClusterController:
         self._send = send
         self._send_admin = send_admin
         self._slicer = slicer
-        self._provider = provider if provider is not None else build_provider()
+        # `ai` la quan ly that (doi che do luc dang chay, do main.py dung). Test chi can 1 provider co
+        # dinh nen cho truyen thang `provider`.
+        if ai is not None:
+            self._ai = ai
+        else:
+            self._ai = AiManager.fixed(provider if provider is not None else MockSuperdocProvider())
         self._store = store if store is not None else ChatStore()
         self._slide_band = slide_band if slide_band is not None else SlideBand.load()
 
@@ -240,7 +248,7 @@ class ClusterController:
             await self._handle_layout(command.layout)
         elif isinstance(command, AdminCommand):
             await self._handle_admin(command)
-        elif isinstance(command, AdminConnectedCommand):
+        elif isinstance(command, (AdminConnectedCommand, AiChangedCommand)):
             self._admin_dirty = True
         elif isinstance(command, SlicesReadyCommand):
             await self._handle_slices_ready(command.wall_count)
@@ -486,7 +494,7 @@ class ClusterController:
         session = ChatSession(
             session_id=str(uuid.uuid4()),
             screen_id=screen_id,
-            provider=self._provider,
+            ai=self._ai.acquire(),
             store=self._store,
             submit=self.submit,
         )
@@ -736,6 +744,7 @@ class ClusterController:
                 "avg_chat_seconds": self._avg_chat_seconds,
                 "ai_errors_today": self._ai_errors_today,
             },
+            ai=self._ai.brief(),
         )
 
     async def _publish_admin(self) -> None:

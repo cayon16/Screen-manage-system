@@ -15,14 +15,14 @@ from app.commands import (
 from app.config import (
     ERROR_CLEANUP_SEC,
     SUPERDOC_HISTORY_LIMIT,
-    SUPERDOC_TIMEOUT_SEC,
     TIER1_CLEANUP_SEC,
     TIER1_WARNING_SEC,
 )
 from app.db import ChatStore
 from app.logging_setup import get_logger
 from app.state.timers import ResettableTimer
-from app.superdoc.base import SuperdocError, SuperdocProvider, Turn
+from app.superdoc.base import ChatContext, SuperdocError, Turn
+from app.superdoc.manager import AiLease
 
 logger = get_logger()
 
@@ -42,7 +42,7 @@ class ChatSession:
         self,
         session_id: str,
         screen_id: int,
-        provider: SuperdocProvider,
+        ai: AiLease,
         store: ChatStore,
         submit: SubmitFn,
     ):
@@ -53,7 +53,10 @@ class ChatSession:
         self.waiting_for_ai = False
         self.in_error = False
 
-        self._provider = provider
+        # AI duoc "muon" luc mo phien va giu den khi dong: doi AI giua chung khong lam doi AI cua
+        # phien dang do (chatbot noi bo co the giu phien phia no).
+        self._ai = ai
+        self._ai_context = ChatContext(session_id, screen_id, ai.system_prompt)
         self._store = store
         self._submit = submit
 
@@ -79,12 +82,14 @@ class ChatSession:
         self.cancel_ai_task()
         self.cancel_all_timers()
 
-        # Bao cho AI biet doan chat ket thuc. Provider hien tai deu stateless nen day la no-op,
-        # nhung chatbot Superdoc that co the giu phien phia no.
+        # Bao cho AI biet doan chat ket thuc (chatbot noi bo co the giu phien phia no; cac AI cong
+        # khai la no-op). Loi o day khong duoc lam hong viec don dep.
         try:
-            await self._provider.end_session(self.session_id)
+            await self._ai.provider.end_session(self._ai_context, reason)
         except Exception:
             logger.exception("Bao ket thuc phien cho Superdoc that bai (man %s)", self.screen_id)
+        finally:
+            self._ai.release()
 
         # Xoa lich su trong BO NHO de nguoi ke tiep khong doc duoc cuoc tro chuyen truoc do.
         # Ban ghi trong database van giu — do la yeu cau "luu toan bo lich su tro chuyen".
@@ -158,11 +163,15 @@ class ChatSession:
         # Cat bot lich su cu: payload gui AI phai co tran, khong duoc phinh mai theo do dai phien.
         context = self.history[-SUPERDOC_HISTORY_LIMIT:]
         try:
-            text = await asyncio.wait_for(self._provider.reply(context), timeout=SUPERDOC_TIMEOUT_SEC)
+            text = await asyncio.wait_for(
+                self._ai.provider.reply(context, self._ai_context), timeout=self._ai.timeout_sec
+            )
         except asyncio.CancelledError:
             # Phien bi dong hoac nguoi dung gui cau khac de len — khong bao loi ra man hinh.
             raise
         except asyncio.TimeoutError:
+            # wait_for tu huy cuoc goi nen provider khong biet minh da cham: bao lai de dem vao tinh trang.
+            self._ai.note_timeout()
             await self._submit(
                 AiReplyFailedCommand(
                     screen_id=self.screen_id,

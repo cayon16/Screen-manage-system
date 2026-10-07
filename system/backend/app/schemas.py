@@ -63,6 +63,12 @@ class AdminCommandMsg(BaseModel):
     slide_id: str | None = None
 
 
+class AiModeRequest(BaseModel):
+    """Than cua POST /api/ai/mode."""
+
+    mode: Literal["demo", "internal", "public"]
+
+
 class LayoutDisplay(BaseModel):
     role: int
     wall_index: int
@@ -150,3 +156,5 @@ class AdminSnapshotMsg(BaseModel):
     screens: list[dict[str, Any]]
     slides: list[dict[str, Any]]
     stats: dict[str, Any]
+    # AI dang dung: che do, nha cung cap, model, tinh trang (ban rut gon cua AiManager.brief()).
+    ai: dict[str, Any] = Field(default_factory=dict)

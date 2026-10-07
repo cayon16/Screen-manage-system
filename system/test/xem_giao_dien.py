@@ -231,6 +231,8 @@ def main() -> int:
         ],
         "slides": NUT_SLIDE,
         "stats": {"chats_today": 37, "avg_chat_seconds": 106, "ai_errors_today": 2},
+        "ai": {"mode": "public", "provider": "gemini", "model": "gemini-2.5-flash", "state": "ok",
+               "last_error_code": None},
     }
     bang = mau_bang_dieu_khien.createWithInitialProperties(
         {"admin": QuanTriGia(anh_trang_thai), "manager": quan_ly, "windowed": False}, engine.rootContext())

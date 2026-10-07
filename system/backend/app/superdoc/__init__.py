@@ -1,4 +1,3 @@
-from app.superdoc.base import SuperdocError, SuperdocProvider, Turn
-from app.superdoc.factory import build_provider
+from app.superdoc.base import ChatContext, SuperdocError, SuperdocProvider, Turn, normalize_history
 
-__all__ = ["SuperdocError", "SuperdocProvider", "Turn", "build_provider"]
+__all__ = ["ChatContext", "SuperdocError", "SuperdocProvider", "Turn", "normalize_history"]

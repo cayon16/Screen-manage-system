@@ -257,15 +257,16 @@ cố định 1920×1080 rồi co giãn cho vừa — nên màn 4K hay màn 1080p
 |---|---|---|
 | `ws_routes.py` | 120 | `/ws/{số màn}` cho từng màn, `/ws/admin` cho bảng điều khiển. Đổi tin nhắn thành lệnh. **`/ws/admin` phải khai báo trước `/ws/{screen_id}`**, nếu không route kia bắt mất chữ "admin" rồi từ chối. |
 | `http_routes.py` | 96 | `/healthz` (app dùng để canh backend), `/standby-video` + `/standby-video/{số màn}/{lát}`, `POST /api/layout` (báo bố cục màn), `/media/{tên file}` (ảnh/video của slide). |
+| `ai_routes.py` | 68 | **API quản lý AI** `/api/ai`, `/api/ai/settings`, `/api/ai/mode`, `/api/ai/test` — đổi AI lúc đang chạy, **chỉ gọi được từ chính máy chạy app**. Xem `docs/ai_api.md`. |
 
 ### `app/state/` — luật vận hành
 
 | File | Dòng | Làm gì |
 |---|---|---|
-| `cluster_controller.py` | 744 | **Người viết duy nhất** vào trạng thái. Một vòng lặp asyncio đọc hàng đợi lệnh và làm theo thứ tự, nên không bao giờ có 2 việc sửa trạng thái cùng lúc. Ở đây có: đánh thức theo cặp 2↔4, mở/đóng phiên chat, gọi AI, timer, màn đen, reset, ảnh chụp trạng thái cho bảng điều khiển. |
+| `cluster_controller.py` | 753 | **Người viết duy nhất** vào trạng thái. Một vòng lặp asyncio đọc hàng đợi lệnh và làm theo thứ tự, nên không bao giờ có 2 việc sửa trạng thái cùng lúc. Ở đây có: đánh thức theo cặp 2↔4, mở/đóng phiên chat, gọi AI, timer, màn đen, reset, ảnh chụp trạng thái cho bảng điều khiển. |
 | `screen_fsm.py` | 136 | **Bảng chuyển trạng thái thuần** `transition(vai trò, trạng thái, sự kiện)`. Không mạng, không thời gian, không I/O → test cực nhanh và chắc. Đây là chỗ trả lời "chạm vào lúc này thì màn chuyển sang gì". |
 | `layout.py` | 72 | `ClusterLayout`: vai trò nào đang có, nằm thứ mấy trái→phải. Mặc định đủ 5 màn. |
-| `chat_session.py` | 211 | 1 phiên chat: lịch sử, lượt đang chờ AI, timer Tier‑1, ghi database. |
+| `chat_session.py` | 220 | 1 phiên chat: lịch sử, lượt đang chờ AI, timer Tier‑1, ghi database. |
 | `slide_band.py` | 163 | Dải slide đọc từ `content_manifest/slides.json`; chỉ trả nút của những màn trình chiếu **đang có**; `reset()` về slide mặc định. |
 | `timers.py` | 45 | `ResettableTimer` — hẹn giờ có thể lùi lại từ đầu (dùng cho Tier‑1/Tier‑2). |
 | `sync_clock.py` | 30 | Đồng hồ chung để 5 màn phát video chờ khớp nhau. |
@@ -273,10 +274,29 @@ cố định 1920×1080 rồi co giãn cho vừa — nên màn 4K hay màn 1080p
 | `host_activity.py` | 62 | Người đang ngồi máy chủ dùng chuột/bàn phím (`GetLastInputInfo`) → coi như có người, không đưa màn về chế độ chờ. Đang màn đen thì bỏ qua. |
 | `ws_manager.py` | 53 | Giữ danh sách kết nối, gửi tin cho 1 màn hoặc tất cả. |
 
-### `app/superdoc/` — AI
+### `app/superdoc/` — AI (3 chế độ: demo / nội bộ / công khai)
 
-| File | Dòng | Làm gì |
-|---|---|---|
+Chi tiết vận hành: `docs/ai_api.md` · chuẩn cho IT công ty: `docs/superdoc_bridge_api.md`.
+
+| File | Làm gì |
+|---|---|
+| `base.py` | Khuôn giao tiếp `SuperdocProvider` (`reply`, `end_session`, `aclose`), `ChatContext` (mã phiên, số màn, lời dặn hệ thống), `SuperdocError` có mã lỗi, `normalize_history` (gộp lượt liền nhau, bỏ lượt rỗng). Đổi nhà cung cấp AI chỉ cần viết 1 class theo khuôn này. |
+| `http_common.py` | Đổi lỗi `httpx` sang `SuperdocError` có mã (`http_401`, `timeout`, `network`…) dùng chung cho mọi provider. |
+| `settings.py` | `AiSettings` đọc/ghi `ai_settings.json`. **Không có trường nào chứa khóa API** nên không thể lưu nhầm khóa vào file. Lần đầu chưa có file thì lấy từ biến môi trường (giữ tương thích bản cũ). |
+| `registry.py` | **Chỗ duy nhất biết** cấu hình nào cần gì (`problems`), dựng provider (`build`), mô tả AI đang dùng (`describe`), liệt kê lựa chọn (`CATALOG`). |
+| `manager.py` | `AiManager`: đổi chế độ lúc đang chạy, thử kết nối trước khi đổi, theo dõi tình trạng (ok / degraded / down), cho phiên chat "mượn" AI (`AiLease`) để chat đang dở không bị đổi AI giữa chừng. |
+| `mock_provider.py` | Chế độ `demo`: AI giả theo từ khoá, không cần mạng — chạy và test được trọn luồng. |
+| `gemini_provider.py` | Gọi Gemini (Google). |
+| `openai_provider.py` | Gọi chuẩn Chat Completions: GPT của OpenAI **và** chatbot nội bộ nói chuẩn OpenAI. |
+| `anthropic_provider.py` | Gọi Messages API của Anthropic (Claude). |
+| `bridge_provider.py` | Nối chatbot nội bộ theo chuẩn riêng "Superdoc Bridge v1". |
+| `bridge_reference.py` | **Máy chủ mẫu** của chuẩn Bridge để IT công ty tham khảo/thử (không gắn vào app chính). |
+| `unavailable_provider.py` | Thay cho provider khi cấu hình sai: mọi câu hỏi báo lỗi chung. **Cố ý không lùi về `mock`** — màn hình bệnh viện không được trả lời bằng dữ liệu giả. |
+
+Khóa API **chỉ** ở biến môi trường (`GEMINI_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`,
+`SUPERDOC_INTERNAL_TOKEN`), không bao giờ vào file dự án.
+
+---|---|---|
 | `base.py` | 50 | Khuôn giao tiếp (`Protocol`) + kiểu lỗi. Đổi nhà cung cấp AI chỉ cần viết 1 class theo khuôn này. |
 | `factory.py` | 30 | Chọn nhà cung cấp theo biến môi trường `SUPERDOC_PROVIDER`. |
 | `mock_provider.py` | 109 | **Mặc định**: AI giả, không cần mạng, không cần API key — chạy và test được trọn luồng. |
@@ -313,7 +333,7 @@ cố định 1920×1080 rồi co giãn cho vừa — nên màn 4K hay màn 1080p
 
 ## 8. Test tự động — file nào kiểm gì
 
-### `backend/tests/` — 176 test
+### `backend/tests/` — 301 test
 
 | File | Kiểm |
 |---|---|
@@ -326,7 +346,11 @@ cố định 1920×1080 rồi co giãn cho vừa — nên màn 4K hay màn 1080p
 | `test_admin_routes.py` | `/ws/admin`, `POST /api/layout`, route lát video. |
 | `test_slide_band.py` | Đọc `slides.json`, chọn slide, chỉ hiện nút của màn đang có. |
 | `test_timers.py`, `test_host_activity.py` | Hẹn giờ lùi được; đọc thao tác máy chủ. |
-| `test_superdoc.py` | AI giả + xử lý lỗi của nhà cung cấp. |
+| `test_superdoc.py` | AI giả, Gemini, chuẩn hóa lịch sử. |
+| `test_ai_settings.py` | Cấu hình AI, **file lưu ra không bao giờ chứa khóa**. |
+| `test_ai_providers.py`, `test_ai_bridge.py` | OpenAI / Claude / chatbot nội bộ: hình dạng request, mọi đường lỗi; bridge chạy với máy chủ mẫu thật trong tiến trình. |
+| `test_ai_registry.py`, `test_ai_manager.py` | Cấu hình nào cần gì; đổi AI giữa chừng, thử kết nối hỏng thì giữ AI cũ, trạng thái, không lộ khóa. |
+| `test_ai_wiring.py`, `test_ai_routes.py` | Nối vào phiên chat/bảng điều khiển; API `/api/ai/*` (403 khi gọi từ máy khác, 400/422/424). |
 | `test_video_slicer.py` | Dựng lệnh ffmpeg đúng, nhớ theo nội dung file, không cắt lại vô ích. |
 
 ### `desktop/tests/` — 151 test
@@ -379,7 +403,7 @@ Không cần mạng, không cần API key, không cần nhiều màn hình cho c
 
 ```bat
 cd backend
-..\.venv\Scripts\python -m pytest -q      :: kỳ vọng: 176 passed
+..\.venv\Scripts\python -m pytest -q      :: kỳ vọng: 301 passed
 cd ..
 .venv\Scripts\python -m pytest desktop\tests -q   :: kỳ vọng: 151 passed
 ```
@@ -451,7 +475,7 @@ bị Windows (quan trọng nhất: **sắp xếp màn** và **hiệu chỉnh c�
 
 | Bước | Lệnh | Mất | Kỳ vọng |
 |---|---|---|---|
-| 1 | `pytest -q` (backend, rồi desktop) | 30 s | 176 + 151 passed |
+| 1 | `pytest -q` (backend, rồi desktop) | 30 s | 301 + 151 passed |
 | 2 | `ruff check .` + `pyside6-qmllint` | 5 s | sạch |
 | 3 | `test\xem_giao_dien.py` | 1 ph | 15/15 |
 | 4 | `test\gia_lap_nhieu_man.py` | 2 ph | 15/15 |
@@ -545,20 +569,27 @@ không tồn tại thì app vẫn chạy, màn đó hiện thông báo thiếu f
 
 ### Chat AI
 
-Mặc định dùng AI giả (`mock`) — trả lời theo từ khoá, chạy offline, đủ để test trọn luồng. Gọi Gemini
-thật:
+Ba chế độ, **đổi lúc đang chạy bằng API** (không cần khởi động lại app): `demo` (AI giả offline, mặc định),
+`internal` (chatbot nội bộ công ty) và `public` (Gemini / GPT / Claude). Đầy đủ lệnh PowerShell, bảng mã lỗi
+và cách thêm nhà cung cấp: `docs/ai_api.md`.
 
-```bat
-set SUPERDOC_PROVIDER=gemini
-set GEMINI_API_KEY=<khoá của bạn>
-set GEMINI_MODEL=gemini-2.5-flash        :: tuỳ chọn
+```powershell
+$api = "http://127.0.0.1:8000"
+irm $api/api/ai | ConvertTo-Json -Depth 6                                    # xem dang dung AI nao
+irm -Method Post $api/api/ai/mode -ContentType 'application/json' -Body '{"mode":"demo"}'
+$body = '{"mode":"public","public":{"provider":"anthropic"}}'
+irm -Method Put  $api/api/ai/settings -ContentType 'application/json' -Body $body   # thu ket noi roi moi doi
 ```
 
-> **Đừng ghi API key vào bất kỳ file nào trong dự án**, kể cả file ví dụ. Chỉ đặt qua biến môi
-> trường. Khoá đã lỡ ghi vào file phải thu hồi và tạo lại ở Google AI Studio.
+Khóa API đặt bằng biến môi trường rồi mở lại app (`setx ANTHROPIC_API_KEY "..."`):
+`GEMINI_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `SUPERDOC_INTERNAL_TOKEN` (tuỳ chọn, cho chatbot nội bộ).
 
-Thiếu khoá hoặc lỗi khởi tạo → tự lùi về `mock` và ghi log. Khi có tài liệu API Superdoc thật, thêm 1
-file trong `backend/app/superdoc/` theo khuôn trong `base.py`.
+> **Đừng ghi API key vào bất kỳ file nào trong dự án**, kể cả file ví dụ. Khóa đã lỡ lộ phải thu hồi và
+> tạo lại ở trang quản lý của nhà cung cấp. API quản lý không nhận và không trả khóa.
+
+Cấu hình sai (thiếu khóa, thiếu model…) **không** lùi về `demo`: màn hình báo "chưa kết nối được" và lý do
+thật nằm ở `GET /api/ai` → `problems`. Chatbot nội bộ chưa có tài liệu API thì dùng chuẩn "Superdoc Bridge v1"
+(`docs/superdoc_bridge_api.md`, kèm máy chủ mẫu để IT thử).
 
 ### Card đồ hoạ
 
@@ -596,7 +627,8 @@ Số lượt chat, thời gian trả lời trung bình và số lỗi AI trong n
 | Luật gán vai trò màn | `desktop/layout.py` (có test — `desktop/tests/test_layout.py`) |
 | Màn nào chuyển trạng thái gì | `backend/app/state/screen_fsm.py` |
 | Thêm lệnh cho bảng điều khiển | `schemas.py` → `commands.py` → `cluster_controller.py` → `ManagementWindow.qml` |
-| Đổi sang AI khác | viết 1 class theo khuôn `backend/app/superdoc/base.py`, khai báo ở `factory.py` |
+| Đổi AI đang dùng | API `/api/ai/*` (xem `docs/ai_api.md`), không cần sửa code |
+| Thêm nhà cung cấp AI mới | 1 file provider theo khuôn `superdoc/base.py` + khai báo ở `superdoc/registry.py` (xem `docs/ai_api.md` mục 9) |
 | Phím tắt | `desktop/main.py` (đăng ký) + `desktop/win32.py` (`GlobalHotkeys`) |
 
 ---
@@ -640,5 +672,5 @@ test ghi kèm.
 9. **Mọi thay đổi trạng thái phải đi qua hàng đợi lệnh của `cluster_controller`.** Gọi tắt vào trạng
    thái từ route hay từ timer sẽ tạo ra tranh chấp mà test khó bắt.
 
-10. **API key Gemini chỉ nằm ở biến môi trường `GEMINI_API_KEY`.** Không ghi vào bất kỳ file nào
+10. **API key (Gemini, OpenAI, Claude, token chatbot nội bộ) chỉ nằm ở biến môi trường.** Không ghi vào bất kỳ file nào
     trong dự án, kể cả file ví dụ.

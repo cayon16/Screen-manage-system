@@ -78,11 +78,17 @@ STANDBY_VIDEO_PATH = PROJECT_DIR / STANDBY_VIDEO_REL_PATH
 STANDBY_SLICE_CACHE_DIR = DATA_DIR / "_cache" / "standby_slices"
 
 # ---- Superdoc (AI) ----
-# Mặc định dùng provider "mock" — chạy offline, không cần API key, test tự động không phụ thuộc mạng.
-# Đặt biến môi trường SUPERDOC_PROVIDER=gemini + GEMINI_API_KEY=... để gọi Gemini thật.
-SUPERDOC_PROVIDER = os.environ.get("SUPERDOC_PROVIDER", "mock")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+# AI dang dung (chế độ demo / nội bộ / công khai) đổi lúc đang chạy qua API /api/ai — xem docs/ai_api.md.
+# Lần đầu chưa có file cấu hình thì lấy từ biến môi trường SUPERDOC_PROVIDER (xem superdoc/settings.py).
+# Cấu hình AI đang dùng (chế độ, nhà cung cấp, model...) lưu ở file này và đổi lúc đang chạy qua
+# API /api/ai. File KHÔNG chứa API key: key chỉ nằm trong biến môi trường có tên dưới đây.
+AI_SETTINGS_PATH = DATA_DIR / "ai_settings.json"
+GEMINI_API_KEY_ENV = "GEMINI_API_KEY"
+OPENAI_API_KEY_ENV = "OPENAI_API_KEY"
+ANTHROPIC_API_KEY_ENV = "ANTHROPIC_API_KEY"
+INTERNAL_TOKEN_ENV = "SUPERDOC_INTERNAL_TOKEN"
+GEMINI_DEFAULT_MODEL = "gemini-2.5-flash"
+ANTHROPIC_DEFAULT_MODEL = "claude-opus-5-5"
 # Quá thời gian này mà AI chưa trả lời -> coi như lỗi, màn đó tự dọn dẹp (không treo cả hệ thống).
 SUPERDOC_TIMEOUT_SEC = 30.0
 # Số lượt hội thoại gần nhất gửi kèm làm ngữ cảnh (giới hạn để không phình payload theo thời gian).

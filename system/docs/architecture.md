@@ -243,31 +243,59 @@ hệ thống kẹt mãi ở trạng thái thức.
 
 ## 8. Chat với Superdoc
 
-**Adapter (`app/superdoc/`).** Chatbot Superdoc thật của khách chưa có tài liệu API. Toàn bộ hệ
-thống chỉ nói chuyện qua giao diện `SuperdocProvider` trong `base.py`:
+**Adapter (`app/superdoc/`).** Toàn bộ hệ thống chỉ nói chuyện với AI qua giao diện `SuperdocProvider`
+trong `base.py`: `reply(history, context)`, `end_session(context, reason)`, `aclose()`. `ChatContext` mang
+`session_id`, `screen_id` và lời dặn hệ thống; `SuperdocError.code` ("http_401", "timeout", "network"…) chỉ
+dùng cho trạng thái/thống kê, người dùng trước màn hình không thấy. `end_session` là chỗ **báo cho AI biết
+đoạn chat đã kết thúc** (đúng `descryption.txt` mục 3): chatbot nội bộ có thể giữ phiên phía nó, các AI công
+khai là no-op.
 
-- `reply(history) -> str` — trả lời lượt cuối, ném `SuperdocError` khi hỏng.
-- `end_session(session_id)` — **báo cho AI biết đoạn chat đã kết thúc**, đúng yêu cầu
-  `descryption.txt` mục 3. Provider hiện tại đều stateless nên đây là no-op, nhưng chatbot
-  Superdoc thật có thể là loại giữ phiên phía nó; khi đó đây chính là chỗ gọi endpoint đóng
-  phiên, không phải sửa `ChatSession` hay `ClusterController`.
+**Ba chế độ, đổi lúc đang chạy** (chi tiết vận hành: `docs/ai_api.md`, kế hoạch: `docs/ke_hoach_ai.md`):
 
-Khi có API thật: thêm 1 file provider, đổi `SUPERDOC_PROVIDER`.
+```
+HTTP /api/ai/*  ──►  AiManager ──registry.build──►  provider
+                      │ settings (ai_settings.json, KHÔNG có chỗ chứa key)
+                      │ _Tracked: đo trễ, đếm lỗi → trạng thái ok/degraded/down
+                      ▼
+ClusterController ── acquire() ──► AiLease (provider + prompt + timeout, gắn chặt với 1 ChatSession)
+```
 
-- `mock` (mặc định) — trả lời theo từ khóa, chạy offline, không cần API key.
-  Kiểm tra "câu hỏi y tế" chạy **trước** bảng từ khóa: *"tôi bị đau bụng uống thuốc gì"* có chứa
-  chữ "thuốc" nên nếu tra từ khóa trước sẽ trả ra vị trí nhà thuốc, trong khi đúng ra phải từ
-  chối tư vấn và hướng người bệnh tới quầy tiếp đón. (Lỗi này đã bị test bắt được.)
-- `gemini` — gọi `generateContent`. Lưu ý vai trò của AI trong Gemini tên là `model`, không phải
-  `assistant` như dùng nội bộ.
-- Khởi tạo provider thật thất bại (thiếu key...) → **tự lùi về mock** và ghi log.
+- `demo` → `mock` (trả lời theo từ khóa, chạy offline).
+- `internal` → `bridge` (chuẩn riêng "Superdoc Bridge v1", `docs/superdoc_bridge_api.md`, kèm máy chủ mẫu
+  `bridge_reference.py`) hoặc `openai_compatible` (bot nội bộ nói chuẩn OpenAI).
+- `public` → `gemini`, `openai`, `anthropic` — gọi REST bằng `httpx`, **không dùng SDK** (không phình bản exe,
+  ánh xạ lỗi thống nhất, test bằng `MockTransport`).
+- `registry.py` là chỗ duy nhất biết cấu hình nào cần gì (`problems`), dựng provider (`build`) và liệt kê
+  lựa chọn (`CATALOG`). Thêm nhà cung cấp = 1 file provider + vài dòng ở registry.
+
+**Đổi AI giữa chừng.** Phiên chat "mượn" provider lúc mở (`acquire()`, đồng bộ — không được `await` trong hàng
+đợi command) và trả lúc đóng. Chat mới dùng AI mới; chat đang dở giữ AI cũ tới khi kết thúc. Provider cũ chỉ
+bị `aclose()` khi phiên cuối giữ nó đóng (`pinned_sessions`). Việc gọi mạng của API quản lý (thử kết nối) chạy
+**ngoài** hàng đợi command, dưới `asyncio.Lock` riêng của `AiManager`, nên không làm treo 5 màn.
+
+**Cấu hình sai KHÔNG lùi về mock.** Màn hình bệnh viện mà tự trả lời bằng dữ liệu giả (giờ khám, vị trí khoa
+bịa sẵn) còn nguy hiểm hơn báo thật. Cấu hình `internal`/`public` thiếu gì thì dùng `UnavailableProvider`:
+mọi câu hỏi báo lỗi chung, lý do thật ở log và `GET /api/ai` (`problems`).
+
+**Khóa API chỉ ở biến môi trường.** `AiSettings` (`extra="forbid"`) không có trường nào chứa khóa; API quản lý
+không nhận cũng không trả khóa (chỉ `secrets: {TÊN_BIẾN: true/false}`); log không ghi nội dung chat hay body.
+AI công khai chỉ nhận nội dung hội thoại — không nhận `session_id`/`screen_id` (chỉ bridge nhận).
+
+- `mock` — trả lời theo từ khóa. Kiểm tra "câu hỏi y tế" chạy **trước** bảng từ khóa: *"tôi bị đau bụng uống
+  thuốc gì"* có chứa chữ "thuốc" nên nếu tra từ khóa trước sẽ trả ra vị trí nhà thuốc, trong khi đúng ra phải
+  từ chối tư vấn và hướng người bệnh tới quầy tiếp đón. (Lỗi này đã bị test bắt được.)
+- Mỗi nhà cung cấp một kiểu vai trò/payload, `normalize_history` đưa lịch sử về dạng ai cũng nhận (bỏ lượt rỗng,
+  bỏ lượt `assistant` đứng đầu, gộp lượt liền nhau cùng vai trò): Gemini gọi vai trò của AI là `model`;
+  Anthropic bắt buộc `max_tokens`, đặt `system` ở cấp trên cùng và gộp lượt liền nhau; OpenAI dùng message
+  `system` đứng đầu.
 
 **Chống nhầm phiên.** Mọi message liên quan tới chat đều đi qua `_session_for(screen_id, session_id)`
 và bị bỏ nếu `session_id` không khớp. Đây là lá chắn cho cả một họ bug: câu trả lời của AI về
 muộn sau khi người trước đã bỏ đi sẽ **không** hiện lên màn hình của người kế tiếp.
 
 **Không cho gửi khi AI chưa trả lời xong.** Ô nhập bị khóa ở app màn hình, và backend chặn lần nữa.
-Nếu lọt, lịch sử sẽ có 2 lượt `user` liên tiếp — Gemini thật từ chối payload dạng đó.
+Nếu lọt, lịch sử sẽ có 2 lượt `user` liên tiếp — một số nhà cung cấp AI từ chối payload dạng đó (nên
+`normalize_history` còn gộp lại ở phía provider).
 
 **Lỗi mạng/AI.** Thất bại → chỉ màn đó nhận `error` + bật đồng hồ `ERROR_CLEANUP_SEC` tự dọn dẹp.
 Màn còn lại (nếu đang chat) hoàn toàn không bị ảnh hưởng. Người dùng hỏi lại thành công, hoặc chỉ
@@ -447,7 +475,7 @@ sửa code. `build.py` chạy PyInstaller rồi chép nội dung, video, cache l
 
 ## 15. Test
 
-**Backend — 176 test** (`cd backend && ..\.venv\Scripts\python -m pytest -q`):
+**Backend — 301 test** (`cd backend && ..\.venv\Scripts\python -m pytest -q`):
 
 | File | Nội dung |
 |---|---|
@@ -458,7 +486,14 @@ sửa code. `build.py` chạy PyInstaller rồi chép nội dung, video, cache l
 | `test_video_slicer.py` | Lệnh ffmpeg; cắt thật video tí hon và so từng lát với đúng phần của video gốc; cache theo nội dung; huỷ việc cũ; thiếu ffmpeg/video |
 | `test_admin_routes.py` | `/ws/admin`, `POST /api/layout` (200/400/422), route lát video |
 | `test_slide_band.py` | 6 nút, chọn slide, slide ảnh/video, chặn manifest sai |
-| `test_superdoc.py` | Mock, factory fallback, shape request Gemini + các đường lỗi (không chạm mạng) |
+| `test_superdoc.py` | Mock, shape request Gemini + các đường lỗi, `normalize_history` (không chạm mạng) |
+| `test_ai_settings.py` | Cấu hình AI: mặc định, chặn trường lạ, chuẩn hóa địa chỉ, khởi đầu từ biến môi trường, ghi nguyên tử, **file lưu không bao giờ chứa khóa** |
+| `test_ai_providers.py` | OpenAI / chuẩn OpenAI / Anthropic: hình dạng request, mọi đường lỗi có mã, nối khối text, bị chặn |
+| `test_ai_bridge.py` | Bridge: hợp đồng với máy chủ mẫu thật chạy trong tiến trình (token, `end_session`, phong bì lỗi) |
+| `test_ai_registry.py` | Cấu hình nào cần gì, dựng đúng provider, `describe` không lộ khóa |
+| `test_ai_manager.py` | Đổi AI giữa chừng (chat cũ giữ AI cũ), thử kết nối hỏng giữ AI cũ, trạng thái ok→degraded→down, đếm theo ngày, không lộ khóa |
+| `test_ai_wiring.py` | Ngữ cảnh/lý do đóng phiên tới đúng provider, đổi AI giữa các chat, timeout vào trạng thái, bảng điều khiển được báo |
+| `test_ai_routes.py` | `/api/ai/*`: chỉ máy local (403), 200/400/422/424, lưu file, `/ws/admin` nghe thay đổi |
 | `test_host_activity.py` | Chỉ báo khi mốc input thật sự đổi; tự tắt khi OS không hỗ trợ |
 | `test_timers.py` | ResettableTimer: bắn đúng hạn, cancel, reset |
 | `test_ws_protocol.py` | Round-trip WebSocket thật, route media, chống path traversal, payload hỏng |
